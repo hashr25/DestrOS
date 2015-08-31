@@ -10,6 +10,7 @@ class DisplayVersionCommand : public Command
         DisplayVersionCommand();
     protected:
     private:
+        std::string osVersion;
 };
 
 #endif // DISPLAYVERSIONCOMMAND_H

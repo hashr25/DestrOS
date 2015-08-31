@@ -2,5 +2,10 @@
 
 DisplayDateCommand::DisplayDateCommand()
 {
-    setAlias("ddate");
+
+}
+
+void DisplayDateCommand::execute()
+{
+
 }
