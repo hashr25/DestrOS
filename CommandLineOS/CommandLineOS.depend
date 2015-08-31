@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1440518996 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\main.cpp
+	<iostream>
+
+1440596479 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\command.cpp
+	"Command.h"
+
+1440596515 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\command.h
+	<string>
+
+1440596771 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\commandlog.cpp
+	"CommandLog.h"
+
+1440596681 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\commandlog.h
+	<vector>
+	<Assert.h>
+	"Command.h"
+
+1440603498 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displaydatecommand.cpp
+	"DisplayDateCommand.h"
+
+1440603467 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displaydatecommand.h
+	"Command.h"
+
+1440603513 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displayversioncommand.cpp
+	"DisplayVersionCommand.h"
+
+1440529955 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displayversioncommand.h
+	"Command.h"
+
