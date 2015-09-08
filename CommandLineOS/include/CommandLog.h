@@ -13,6 +13,8 @@ public:
 
     void logAndExecute(Command*);
 
+    std::vector<Command*> getLog();
+
 private:
     std::vector<Command*> log;
 };

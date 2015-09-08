@@ -5,26 +5,56 @@
 1440596479 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\command.cpp
 	"Command.h"
 
-1440596515 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\command.h
+1441675807 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\command.h
 	<string>
 
 1440596771 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\commandlog.cpp
 	"CommandLog.h"
 
-1440596681 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\commandlog.h
+1441675965 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\commandlog.h
 	<vector>
 	<Assert.h>
 	"Command.h"
 
-1441028605 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displaydatecommand.cpp
+1441370510 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displaydatecommand.cpp
 	"DisplayDateCommand.h"
 
-1441028640 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displaydatecommand.h
+1441674779 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displaydatecommand.h
+	<iostream>
+	<ctime>
 	"Command.h"
 
-1440603513 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displayversioncommand.cpp
+1441370519 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displayversioncommand.cpp
 	"DisplayVersionCommand.h"
 
-1440529955 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displayversioncommand.h
+1441370603 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displayversioncommand.h
+	<iostream>
 	"Command.h"
+
+1441368846 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\commandlistener.cpp
+	"CommandListener.h"
+
+1441369501 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\commandlistener.h
+	<iostream>
+	<vector>
+	"Command.h"
+
+1441551131 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\system.cpp
+	"System.h"
+
+1441674655 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\system.h
+	<vector>
+	<string>
+	"CommandListener.h"
+	"CommandLog.h"
+	"Command.h"
+	"DisplayVersionCommand.h"
+	"DisplayDateCommand.h"
+	"DisplayHelpCommand.h"
+
+1441674706 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displayhelpcommand.h
+	<Command.h>
+
+1441674707 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displayhelpcommand.cpp
+	"DisplayHelpCommand.h"
 

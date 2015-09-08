@@ -11,3 +11,8 @@ void CommandLog::logAndExecute(Command* cmd)
 
     cmd -> execute();
 }
+
+std::vector<Command*> CommandLog::getLog()
+{
+    return log;
+}

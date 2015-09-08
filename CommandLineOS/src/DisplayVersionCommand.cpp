@@ -2,11 +2,11 @@
 
 DisplayVersionCommand::DisplayVersionCommand()
 {
-    osVersion = "0.001.001 BETA"
+    osVersion = "0.001.001 BETA";
     setAlias("ver");
 }
 
 void DisplayVersionCommand::execute()
 {
-
+    std::cout << "Version " << osVersion << std::endl;
 }
