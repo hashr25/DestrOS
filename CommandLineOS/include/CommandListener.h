@@ -13,7 +13,12 @@ class CommandListener
         CommandListener();
 
         std::string getInput();
-        Command* deciperCommand(std::string, std::vector<Command>);
+        std::string getCommandFromInput(std::string);
+        std::string getArgument(std::string);
+
+        Command* decipherCommand(std::string, std::string, std::vector<Command*>);
+
+        Command* getCommand(std::vector<Command*>);
 
     protected:
 

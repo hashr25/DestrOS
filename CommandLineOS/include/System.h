@@ -22,9 +22,12 @@ class System
         void run();
 
     private:
+        Command* currentCmd;
         std::vector<Command*> commandList;
         CommandListener listener;
         CommandLog log;
+
+        bool running;
 };
 
 #endif // SYSTEM_H

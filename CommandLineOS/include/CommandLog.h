@@ -14,9 +14,11 @@ public:
     void logAndExecute(Command*);
 
     std::vector<Command*> getLog();
+    std::vector<std::string> getArgs();
 
 private:
     std::vector<Command*> log;
+    std::vector<std::string> argLog;
 };
 
 #endif // COMMANDLOG_H

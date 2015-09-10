@@ -5,12 +5,27 @@ Command::Command()
 
 }
 
+std::string Command::getName()
+{
+    return commandName;
+}
+
 void Command::setAlias(std::string newName)
 {
     commandName = newName;
 }
 
-void Command::addArgument(std::string argument);
+std::string Command::getArgument()
+{
+    return argument;
+}
+
+void Command::setArgument(std::string argument)
+{
+    this -> argument = argument;
+}
+
+void Command::addValidArgument(std::string argument)
 {
     validArguments.push_back(argument);
 }
