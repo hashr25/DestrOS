@@ -14,6 +14,9 @@ public:
     std::string getName();
     void setAlias(std::string);
 
+    std::string getDesc();
+    void setDesc(std::string);
+
     std::string getArgument();
     void setArgument(std::string);
 
@@ -22,12 +25,18 @@ public:
     void setHelp(std::string);
     std::string getHelp();
 
+    void setCommandList(std::vector<Command*>*);
+    std::vector<Command*>* getCommandList();
+
 private:
     std::string commandName;
+    std::string commandDesc;
     std::string argument;
 
     std::vector<std::string> validArguments;
     std::string helpInfo;
+
+    std::vector<Command*>* commandList;
 };
 
 #endif // COMMAND_H

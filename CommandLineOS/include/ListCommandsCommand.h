@@ -1,6 +1,8 @@
 #ifndef LISTCOMMANDSCOMMAND_H
 #define LISTCOMMANDSCOMMAND_H
 
+#include <iostream>
+
 #include <Command.h>
 
 
@@ -8,7 +10,9 @@ class ListCommandsCommand : public Command
 {
     public:
         ListCommandsCommand();
-    protected:
+
+        void execute();
+
     private:
 };
 

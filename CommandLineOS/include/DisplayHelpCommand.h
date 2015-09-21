@@ -1,14 +1,19 @@
 #ifndef DISPLAYHELPCOMMAND_H
 #define DISPLAYHELPCOMMAND_H
 
-#include <Command.h>
+#include <iostream>
+
+#include "Command.h"
 
 
 class DisplayHelpCommand : public Command
 {
     public:
-        DisplayHelpCommand();
-    protected:
+        DisplayHelpCommand(std::vector<Command*>*);
+        DisplayHelpCommand(std::vector<Command*>*, std::string);
+
+        void execute();
+
     private:
 };
 
