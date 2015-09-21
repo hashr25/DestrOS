@@ -11,7 +11,7 @@ class DisplayDateCommand : public Command
 public:
     DisplayDateCommand();
 
-    void execute();
+    void execute(std::string);
 
 private:
 

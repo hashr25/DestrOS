@@ -11,7 +11,7 @@ class CommandLog
 public:
     CommandLog();
 
-    void logAndExecute(Command*);
+    void logAndExecute(Command*, std::string);
 
     std::vector<Command*> getLog();
     std::vector<std::string> getArgs();

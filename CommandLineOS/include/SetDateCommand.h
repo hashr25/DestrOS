@@ -8,7 +8,8 @@ class SetDateCommand : public Command
 {
     public:
         SetDateCommand();
-        virtual ~SetDateCommand();
+
+        void execute(std::string);
     protected:
     private:
 };

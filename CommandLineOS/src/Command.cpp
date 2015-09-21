@@ -25,22 +25,6 @@ void Command::setDesc(std::string newDesc)
     commandDesc = newDesc;
 }
 
-std::string Command::getArgument()
-{
-    return argument;
-}
-
-void Command::setArgument(std::string argument)
-{
-    this -> argument = argument;
-}
-
-void Command::addValidArgument(std::string argument)
-{
-    validArguments.push_back(argument);
-}
-
-
 void Command::setHelp(std::string help)
 {
     helpInfo = help;

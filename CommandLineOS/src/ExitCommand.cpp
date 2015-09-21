@@ -6,7 +6,7 @@ ExitCommand::ExitCommand()
     setDesc("Completely shuts down the operating system");
 }
 
-void ExitCommand::execute()
+void ExitCommand::execute(std::string arg)
 {
     std::cout << "\n\n\n\nThank you for using DestrOS!!!" << std::endl;
 

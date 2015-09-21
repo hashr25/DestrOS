@@ -19,7 +19,7 @@ class ExitCommand : public Command
     public:
         ExitCommand();
 
-        void execute();
+        void execute(std::string);
     protected:
     private:
 };

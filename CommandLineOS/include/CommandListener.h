@@ -16,7 +16,7 @@ class CommandListener
         std::string getCommandFromInput(std::string);
         std::string getArgument(std::string);
 
-        Command* decipherCommand(std::string, std::string, std::vector<Command*>);
+        Command* decipherCommand(std::string, std::vector<Command*>);
 
         Command* getCommand(std::vector<Command*>);
 

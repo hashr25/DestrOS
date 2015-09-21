@@ -10,9 +10,8 @@ class DisplayHelpCommand : public Command
 {
     public:
         DisplayHelpCommand(std::vector<Command*>*);
-        DisplayHelpCommand(std::vector<Command*>*, std::string);
 
-        void execute();
+        void execute(std::string);
 
     private:
 };

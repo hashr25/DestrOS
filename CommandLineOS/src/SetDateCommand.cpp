@@ -5,7 +5,7 @@ SetDateCommand::SetDateCommand()
     //ctor
 }
 
-SetDateCommand::~SetDateCommand()
+void SetDateCommand::execute(std::string arg)
 {
-    //dtor
+
 }

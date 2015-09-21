@@ -45,7 +45,7 @@ std::string CommandListener::getArgument(std::string userInput)
 }
 
 
-Command* CommandListener::decipherCommand(std::string cmd, std::string arg, std::vector<Command*> cmdList)
+Command* CommandListener::decipherCommand(std::string cmd, std::vector<Command*> cmdList)
 {
     Command* command = NULL;
 
@@ -56,8 +56,6 @@ Command* CommandListener::decipherCommand(std::string cmd, std::string arg, std:
             command = cmdList.at(i);
         }
     }
-
-    command -> setArgument(arg);
 
     return command;
 }

@@ -9,9 +9,9 @@
 class ListCommandsCommand : public Command
 {
     public:
-        ListCommandsCommand();
+        ListCommandsCommand(std::vector<Command*>*);
 
-        void execute();
+        void execute(std::string);
 
     private:
 };

@@ -4,9 +4,10 @@ DisplayDateCommand::DisplayDateCommand()
 {
     setAlias("date");
     setHelp("This command will display, but not store, the current date.");
+    setDesc("Displays the current date (actual date on your machine) ");
 }
 
-void DisplayDateCommand::execute()
+void DisplayDateCommand::execute(std::string arg)
 {
     time_t unixTime = time(0);
     tm* currentTime = localtime(&unixTime);

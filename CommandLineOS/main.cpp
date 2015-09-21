@@ -45,21 +45,18 @@ void testCommands()
     Command* cmd2 = new DisplayDateCommand;
     cmdList -> push_back(cmd2);
 
-    Command* cmd3 = new ListCommandsCommand;
+    Command* cmd3 = new ListCommandsCommand(cmdList);
     cmdList -> push_back(cmd3);
 
     Command* cmd4 = new DisplayHelpCommand(cmdList);
     cmdList -> push_back(cmd4);
 
-    Command* cmd5 = new DisplayHelpCommand(cmdList, "blah");
+    Command* cmd5 = new ExitCommand;
     cmdList -> push_back(cmd5);
-
-    Command* cmd6 = new ExitCommand;
-    cmdList -> push_back(cmd6);
 
     for(int i = 0; i < cmdList -> size(); i++)
     {
-        cmdList -> at(i) -> execute();
+        cmdList -> at(i) -> execute("");
     }
 
     for(int i = 0; i < cmdList -> size(); i++)

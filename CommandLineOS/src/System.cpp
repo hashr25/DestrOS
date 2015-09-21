@@ -18,8 +18,14 @@ void System::run()
 {
     while(running)
     {
-        currentCmd = listener.getCommand(commandList);
+        std::string currentInput = listener.getInput();
 
-        log.logAndExecute(currentCmd);
+        ///Convert input into command
+        currentCmd = NULL;
+
+        ///Convert input into argument
+        std::string currentArg = "";
+
+        log.logAndExecute(currentCmd, currentArg);
     }
 }

@@ -11,7 +11,7 @@ class DisplayVersionCommand : public Command
     public:
         DisplayVersionCommand();
 
-        void execute();
+        void execute(std::string);
 
     protected:
 
