@@ -11,7 +11,7 @@ std::string CommandListener::getInput()
     std::string userInput = "";
     bool goodInput = false;
 
-    while(!goodInput && userInput != "")
+    while(!goodInput && userInput == "")
     {
         std::cout << "# - ";
         std::cin >> userInput;
@@ -40,28 +40,29 @@ std::string CommandListener::getCommandFromInput(std::string userInput)
 
 std::string CommandListener::getArgument(std::string userInput)
 {
-    int space = userInput.find(' ');
-    return userInput.substr(space, userInput.size()-space);
+    std::string arg = "";
+
+    if(int space = userInput.find(' '))
+    {
+        //arg = arg + userInput.substr(space, userInput.size()-space);
+    }
+
+
+    return arg;
 }
 
 
-Command* CommandListener::decipherCommand(std::string cmd, std::vector<Command*> cmdList)
+Command* CommandListener::decipherCommand(std::string cmd, std::vector<Command*>* cmdList)
 {
     Command* command = NULL;
 
-    for(int i = 0; i < cmdList.size(); i++)
+    for(int i = 0; i < cmdList -> size(); i++)
     {
-        if(cmdList.at(i) -> getName() == cmd)
+        if(cmdList -> at(i) -> getName() == cmd)
         {
-            command = cmdList.at(i);
+            command = cmdList -> at(i);
         }
     }
 
     return command;
-}
-
-
-Command* CommandListener::getCommand(std::vector<Command*> cmdList)
-{
-
 }

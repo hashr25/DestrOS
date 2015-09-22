@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1442869924 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\main.cpp
+1442892605 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\main.cpp
 	<iostream>
 	"System.h"
 	"DisplayDateCommand.h"
@@ -23,7 +23,7 @@
 	<Assert.h>
 	"Command.h"
 
-1442870110 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displaydatecommand.cpp
+1442870462 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displaydatecommand.cpp
 	"DisplayDateCommand.h"
 
 1442869939 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displaydatecommand.h
@@ -31,25 +31,25 @@
 	<ctime>
 	"Command.h"
 
-1442870110 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displayversioncommand.cpp
+1442870417 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displayversioncommand.cpp
 	"DisplayVersionCommand.h"
 
 1442869956 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displayversioncommand.h
 	<iostream>
 	"Command.h"
 
-1442869533 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\commandlistener.cpp
+1442892380 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\commandlistener.cpp
 	"CommandListener.h"
 
-1442869545 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\commandlistener.h
+1442892259 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\commandlistener.h
 	<iostream>
 	<vector>
 	"Command.h"
 
-1442870344 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\system.cpp
+1442892514 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\system.cpp
 	"System.h"
 
-1442516549 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\system.h
+1442891852 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\system.h
 	<vector>
 	<string>
 	"CommandListener.h"
@@ -58,6 +58,9 @@
 	"DisplayVersionCommand.h"
 	"DisplayDateCommand.h"
 	"DisplayHelpCommand.h"
+	"ListCommandsCommand.h"
+	"ExitCommand.h"
+	"SetDateCommand.h"
 
 1442869950 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displayhelpcommand.h
 	<iostream>

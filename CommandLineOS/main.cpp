@@ -12,14 +12,15 @@ using namespace std;
 
 void testSuite();
 void testCommands();
+void testSystem();
 
 int main()
 {
     /**   //////////////////////////////
     Uncomment when actively running
 
-    //System sys;
-    //sys.run();
+    System sys;
+    sys.run();
 
     **/ /// ////////////////////////////
 
@@ -30,6 +31,8 @@ int main()
 
 void testSuite()
 {
+    testSystem();
+
     testCommands();
 }
 
@@ -63,4 +66,10 @@ void testCommands()
     {
         delete cmdList -> at(i);
     }
+}
+
+void testSystem()
+{
+    System sys;
+    sys.run();
 }

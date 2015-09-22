@@ -11,6 +11,9 @@
 #include "DisplayVersionCommand.h"
 #include "DisplayDateCommand.h"
 #include "DisplayHelpCommand.h"
+#include "ListCommandsCommand.h"
+#include "ExitCommand.h"
+#include "SetDateCommand.h"
 
 class System
 {
@@ -23,8 +26,7 @@ class System
         void run();
 
     private:
-        Command* currentCmd;
-        std::vector<Command*> commandList;
+        std::vector<Command*>* commandList;
         CommandListener listener;
         CommandLog log;
 
