@@ -8,13 +8,14 @@ CommandListener::CommandListener()
 
 std::string CommandListener::getInput()
 {
+    std::cin.clear();
     std::string userInput = "";
     bool goodInput = false;
 
     while(!goodInput && userInput == "")
     {
-        std::cout << "# - ";
-        std::cin >> userInput;
+        std::cout << "\n# - ";
+        std::getline(std::cin, userInput);
 
         if(std::cin.fail())
         {
@@ -24,6 +25,7 @@ std::string CommandListener::getInput()
         else
         {
             goodInput = true;
+            std::cout << std::endl;
         }
     }
 
@@ -41,11 +43,21 @@ std::string CommandListener::getCommandFromInput(std::string userInput)
 std::string CommandListener::getArgument(std::string userInput)
 {
     std::string arg = "";
+    int space = 42;
 
-    if(int space = userInput.find(' '))
+    for(int i = 0; i < userInput.size(); i++)
     {
-        //arg = arg + userInput.substr(space, userInput.size()-space);
+        if(userInput.at(i) == ' ')
+        {
+            space = i;
+        }
     }
+
+    if(space != 42)
+    {
+        arg = userInput.substr(space+1, userInput.size()-space-1);
+    }
+
 
 
     return arg;
@@ -62,6 +74,11 @@ Command* CommandListener::decipherCommand(std::string cmd, std::vector<Command*>
         {
             command = cmdList -> at(i);
         }
+    }
+
+    if(command == NULL)
+    {
+        std::cout << "Invalid command" << std::endl;
     }
 
     return command;

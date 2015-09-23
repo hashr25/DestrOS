@@ -20,8 +20,9 @@ class ExitCommand : public Command
         ExitCommand();
 
         void execute(std::string);
-    protected:
+
     private:
+        void goodBye();
 };
 
 #endif // EXITCOMMAND_H

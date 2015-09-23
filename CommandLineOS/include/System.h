@@ -14,6 +14,7 @@
 #include "ListCommandsCommand.h"
 #include "ExitCommand.h"
 #include "SetDateCommand.h"
+#include "SetAliasCommand.h"
 
 class System
 {
@@ -21,16 +22,20 @@ class System
         System();
         ~System();
 
-        void initCommands();
-
         void run();
 
     private:
+        //Data
         std::vector<Command*>* commandList;
         CommandListener listener;
         CommandLog log;
 
         bool running;
+
+        //Methods
+        void initCommands();
+
+        void welcome();
 };
 
 #endif // SYSTEM_H

@@ -4,6 +4,7 @@ System::System()
 {
     running = true;
     initCommands();
+    welcome();
 }
 
 System::~System()
@@ -26,33 +27,55 @@ void System::initCommands()
     Command* cmd2 = new DisplayDateCommand;
     commandList -> push_back(cmd2);
 
-    Command* cmd3 = new DisplayVersionCommand;
+    Command* cmd3 = new SetDateCommand;
     commandList -> push_back(cmd3);
 
-    Command* cmd4 = new ListCommandsCommand(commandList);
+    Command* cmd4 = new DisplayVersionCommand;
     commandList -> push_back(cmd4);
 
-    Command* cmd5 = new ExitCommand;
+    Command* cmd5 = new ListCommandsCommand(commandList);
     commandList -> push_back(cmd5);
 
-    Command* cmd6 = new SetDateCommand;
+    Command* cmd6 = new SetAliasCommand(commandList);
     commandList -> push_back(cmd6);
+
+    Command* cmd7 = new ExitCommand;
+    commandList -> push_back(cmd7);
+}
+
+void System::welcome()
+{
+    std::cout << "\n\n\n\n\n\n\n\n\n\n                                                  " << std::endl;
+    std::cout << "                              Welcome to DestrOS.                     " << std::endl;
+    std::cout << "          An interactive command line operating system built for CS361" << std::endl;
+    std::cout << "                             Enjoy your time here!                    " << std::endl;
+    std::cout << "                   Type \"help\" for general help information.        " << std::endl;
+    std::cout << "\n\n\n\n\n\n\n\n\n                                                    " << std::endl;
+
+    std::cin.ignore();
+    system("CLS");
 }
 
 void System::run()
 {
-    while(running) ///I know, infinite loop until exit command is
+    while(running) ///I know, infinite loop. BAAAAD! Until exit command is executed
     {
-        std::string currentInput = listener.getInput();
+        std::string currentInput = "";
+        currentInput = listener.getInput();
 
         ///Convert input into command
-        std::string currentCmdStr = listener.getCommandFromInput(currentInput);
+        std::string currentCmdStr = "";
+        currentCmdStr = listener.getCommandFromInput(currentInput);
         Command* currentCmd = listener.decipherCommand(currentCmdStr, commandList);
 
         ///Convert input into argument
-        std::string currentArg = listener.getArgument(currentInput);
+        std::string currentArg = "";
+        currentArg = listener.getArgument(currentInput);
 
-        log.logAndExecute(currentCmd, currentArg);
+        if(currentCmd != NULL)
+        {
+            log.logAndExecute(currentCmd, currentArg);
+        }
     }
 }
 
