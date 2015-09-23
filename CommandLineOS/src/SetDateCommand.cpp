@@ -20,7 +20,9 @@ void SetDateCommand::execute(std::string arg)
     #elif __WIN32
         SYSTEMTIME currentTime;
         GetSystemTime(&currentTime);
+
         SYSTEMTIME newTime;
+        newTime.wDayOfWeek = 1;
         newTime.wDay = day;
         newTime.wMonth = month;
         newTime.wYear = year;
@@ -29,7 +31,11 @@ void SetDateCommand::execute(std::string arg)
         newTime.wSecond = currentTime.wSecond;
         newTime.wMilliseconds = currentTime.wMilliseconds;
         SetSystemTime(&newTime);
+
+        ///Used for troubleshooting timeset
+        //std::cout << "Error: " << GetLastError() << std::endl;
     #endif // __linux__
+
 }
 
 int SetDateCommand::getIntInput()
@@ -110,12 +116,12 @@ int SetDateCommand::getYearInput()
 
     while(!goodInput)
     {
-        std::cout << "Enter year(2000-9999)" << std::endl;
+        std::cout << "Enter year(1000-9999)" << std::endl;
         yearInput = getIntInput();
 
-        if(yearInput < 2000 || yearInput > 9999 )
+        if(yearInput < 1000 || yearInput > 9999 )
         {
-            std::cout << "Invalid number for month. This system only allows years between 2000 and 9999" << std::endl;
+            std::cout << "Invalid number for month. This system only allows years between 1000 and 9999" << std::endl;
         }
         else
         {
@@ -160,4 +166,12 @@ std::string SetDateCommand::formatDate(int month, int day, int year)
     date += intToString(day);
 
     return date;
+}
+
+///Used for testing time changes
+void SetDateCommand::printSystemTime(SYSTEMTIME t)
+{
+    std::cout << t.wDayOfWeek << std::endl;
+    std::cout << t.wMonth << " - " << t.wDay << " - " << t.wYear << std::endl;
+    std::cout << t.wHour << ":" << t.wMinute << ":" << t.wSecond << ":" << t.wMilliseconds << std::endl;
 }

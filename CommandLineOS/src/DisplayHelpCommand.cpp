@@ -14,7 +14,7 @@ void DisplayHelpCommand::execute(std::string arg)
     if(arg == "")
     {
         std::cout << "If you truly need help, you might want to install Noobuntu or Macrosoft Doors\n" << std::endl;
-        std::cout << "Enter listc for a list of valid commands." << std::endl;
+        std::cout << "Enter " << findListCommandName() << " for a list of valid commands." << std::endl;
     }
     else
     {
@@ -40,4 +40,19 @@ void DisplayHelpCommand::execute(std::string arg)
         }
     }
 
+}
+
+std::string DisplayHelpCommand::findListCommandName()
+{
+    std::string name = "";
+
+    for(int i = 0; i < getCommandList() -> size(); i++)
+    {
+        if(getCommandList() -> at(i) -> getDesc() == "Lists all valid commands.")
+        {
+            name = getCommandList() -> at(i) -> getName();
+        }
+    }
+
+    return name;
 }

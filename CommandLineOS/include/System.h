@@ -15,6 +15,7 @@
 #include "ExitCommand.h"
 #include "SetDateCommand.h"
 #include "SetAliasCommand.h"
+#include "ViewDirectoryCommand.h"
 
 class System
 {

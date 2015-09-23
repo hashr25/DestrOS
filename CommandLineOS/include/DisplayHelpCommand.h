@@ -14,6 +14,7 @@ class DisplayHelpCommand : public Command
         void execute(std::string);
 
     private:
+        std::string findListCommandName();
 };
 
 #endif // DISPLAYHELPCOMMAND_H

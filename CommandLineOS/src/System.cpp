@@ -39,8 +39,11 @@ void System::initCommands()
     Command* cmd6 = new SetAliasCommand(commandList);
     commandList -> push_back(cmd6);
 
-    Command* cmd7 = new ExitCommand;
+    Command* cmd7 = new ViewDirectoryCommand;
     commandList -> push_back(cmd7);
+
+    Command* cmd8 = new ExitCommand;
+    commandList -> push_back(cmd8);
 }
 
 void System::welcome()

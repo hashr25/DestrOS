@@ -42,8 +42,10 @@
 		<Unit filename="include/DisplayVersionCommand.h" />
 		<Unit filename="include/ExitCommand.h" />
 		<Unit filename="include/ListCommandsCommand.h" />
+		<Unit filename="include/SetAliasCommand.h" />
 		<Unit filename="include/SetDateCommand.h" />
 		<Unit filename="include/System.h" />
+		<Unit filename="include/ViewDirectoryCommand.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Command.cpp" />
 		<Unit filename="src/CommandListener.cpp" />
@@ -53,8 +55,10 @@
 		<Unit filename="src/DisplayVersionCommand.cpp" />
 		<Unit filename="src/ExitCommand.cpp" />
 		<Unit filename="src/ListCommandsCommand.cpp" />
+		<Unit filename="src/SetAliasCommand.cpp" />
 		<Unit filename="src/SetDateCommand.cpp" />
 		<Unit filename="src/System.cpp" />
+		<Unit filename="src/ViewDirectoryCommand.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

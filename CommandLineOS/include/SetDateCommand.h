@@ -27,6 +27,7 @@ class SetDateCommand : public Command
         int getYearInput();
         std::string intToString(int);
         std::string formatDate(int, int, int);
+        void printSystemTime(SYSTEMTIME);
 };
 
 #endif // SETDATECOMMAND_H

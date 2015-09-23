@@ -46,10 +46,10 @@
 	<vector>
 	"Command.h"
 
-1442972076 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\system.cpp
+1443014347 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\system.cpp
 	"System.h"
 
-1442972165 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\system.h
+1443014360 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\system.h
 	<vector>
 	<string>
 	"CommandListener.h"
@@ -62,12 +62,13 @@
 	"ExitCommand.h"
 	"SetDateCommand.h"
 	"SetAliasCommand.h"
+	"ViewDirectoryCommand.h"
 
-1442869950 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displayhelpcommand.h
+1443014198 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\displayhelpcommand.h
 	<iostream>
 	"Command.h"
 
-1442971176 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displayhelpcommand.cpp
+1443014235 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\displayhelpcommand.cpp
 	"DisplayHelpCommand.h"
 
 1442971402 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\exitcommand.cpp
@@ -87,20 +88,28 @@
 	<iostream>
 	<Command.h>
 
-1442969595 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\setdatecommand.cpp
+1443014032 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\setdatecommand.cpp
 	"SetDateCommand.h"
 
-1442937464 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\setdatecommand.h
+1442974334 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\setdatecommand.h
 	<Windows.h>
 	<string>
 	<sstream>
 	"Command.h"
 	"CommandListener.h"
 
-1442972307 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\setaliascommand.cpp
+1442972380 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\setaliascommand.cpp
 	"SetAliasCommand.h"
 
 1442972145 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\setaliascommand.h
 	"Command.h"
 	"CommandListener.h"
+
+1443014293 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\src\viewdirectorycommand.cpp
+	"ViewDirectoryCommand.h"
+
+1443012026 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\commandlineos\include\viewdirectorycommand.h
+	<iostream>
+	<dirent.h>
+	"Command.h"
 
