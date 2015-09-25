@@ -16,6 +16,7 @@
 #include "SetDateCommand.h"
 #include "SetAliasCommand.h"
 #include "ViewDirectoryCommand.h"
+#include "DisplayHistoryCommand.h"
 
 class System
 {
@@ -29,7 +30,7 @@ class System
         //Data
         std::vector<Command*>* commandList;
         CommandListener listener;
-        CommandLog log;
+        CommandLog* log;
 
         bool running;
 

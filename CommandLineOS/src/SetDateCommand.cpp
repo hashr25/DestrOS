@@ -3,7 +3,7 @@
 SetDateCommand::SetDateCommand()
 {
     setAlias("setdate");
-    setHelp("Enter command and follow instructions to set system date. WARNING: Actually sets your system's date!!!");
+    setHelp("Enter command and follow instructions to set system date. WARNING: Actually\n    sets your system's date!!!");
     setDesc("Prompt user to update system date.");
 }
 

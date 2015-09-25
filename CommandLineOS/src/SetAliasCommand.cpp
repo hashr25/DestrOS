@@ -4,7 +4,7 @@ SetAliasCommand::SetAliasCommand(std::vector<Command*>* cmdList)
 {
     setAlias("alias");
     setDesc("Renames any given command to whatever the user pleases");
-    setHelp("Use the name of the command you want to change as the argument such as \"<this command> <target command>\".");
+    setHelp("Follow this command by the name of the target command.");
     setCommandList(cmdList);
 }
 
@@ -18,9 +18,18 @@ void SetAliasCommand::execute(std::string arg)
         std::cout << "Enter that command's new name - ";
         std::cin >> newName;
 
-        cmdToChange -> setAlias(newName);
+        if( getCommand(newName) == NULL )
+        {
+            cmdToChange -> setAlias(newName);
+        }
+        else
+        {
+            std::cout << "There is already a command with that name." <<std::endl;
+        }
 
+        //Clear so it doesn't catch next getline...
         std::cin.clear();
+        std::cin.ignore();
     }
     else
     {

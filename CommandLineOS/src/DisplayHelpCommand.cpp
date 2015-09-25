@@ -4,7 +4,7 @@ DisplayHelpCommand::DisplayHelpCommand(std::vector<Command*>* cmdList)
 {
     setAlias("help");
     setDesc("Displays help information about system or command");
-    setHelp("Simply enter help for general help or help <command name> for specific help");
+    setHelp("Follow this command with the name of another command to get more information \n    about that command.");
 
     setCommandList(cmdList);
 }

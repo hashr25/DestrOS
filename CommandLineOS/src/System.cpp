@@ -3,6 +3,7 @@
 System::System()
 {
     running = true;
+    log = new CommandLog;
     initCommands();
     welcome();
 }
@@ -15,6 +16,8 @@ System::~System()
         delete commandList -> at(i);
     }
     delete commandList;
+
+    delete log;
 }
 
 void System::initCommands()
@@ -42,8 +45,11 @@ void System::initCommands()
     Command* cmd7 = new ViewDirectoryCommand;
     commandList -> push_back(cmd7);
 
-    Command* cmd8 = new ExitCommand;
+    Command* cmd8 = new DisplayHistoryCommand(log);
     commandList -> push_back(cmd8);
+
+    Command* cmd9 = new ExitCommand;
+    commandList -> push_back(cmd9);
 }
 
 void System::welcome()
@@ -77,7 +83,7 @@ void System::run()
 
         if(currentCmd != NULL)
         {
-            log.logAndExecute(currentCmd, currentArg);
+            log -> logAndExecute(currentCmd, currentArg);
         }
     }
 }

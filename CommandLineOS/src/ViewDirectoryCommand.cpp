@@ -4,7 +4,7 @@ ViewDirectoryCommand::ViewDirectoryCommand()
 {
     setAlias("vdir");
     setDesc("Displays files and subdirectories");
-    setHelp("Using no argument will give you the information on current directory.");
+    setHelp("Using no argument will give you the information on current directory.\nFollowing this command with a directory will list the files in that directory");
 }
 
 
@@ -34,7 +34,7 @@ void ViewDirectoryCommand::execute(std::string arg)
 
 
     std::cout << "Files contained in that directory:" << std::endl;
-    while (directoryItem = readdir (directory))
+    while ( (directoryItem = readdir (directory)) )
     {
         if (directoryItem == NULL)
         {

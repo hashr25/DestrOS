@@ -1,6 +1,8 @@
 #ifndef COMMANDLOG_H
 #define COMMANDLOG_H
 
+#include <iostream>
+
 #include <vector>
 #include <Assert.h>
 
@@ -10,15 +12,16 @@ class CommandLog
 {
 public:
     CommandLog();
+    ~CommandLog();
 
     void logAndExecute(Command*, std::string);
 
-    std::vector<Command*> getLog();
-    std::vector<std::string> getArgs();
+    std::vector<Command*>* getCommands();
+    std::vector<std::string>* getArgs();
 
 private:
-    std::vector<Command*> log;
-    std::vector<std::string> argLog;
+    std::vector<Command*>* log;
+    std::vector<std::string>* argLog;
 };
 
 #endif // COMMANDLOG_H
