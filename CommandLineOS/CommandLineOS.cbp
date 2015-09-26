@@ -39,6 +39,7 @@
 		<Unit filename="include/CommandLog.h" />
 		<Unit filename="include/DisplayDateCommand.h" />
 		<Unit filename="include/DisplayHelpCommand.h" />
+		<Unit filename="include/DisplayHistoryCommand.h" />
 		<Unit filename="include/DisplayVersionCommand.h" />
 		<Unit filename="include/ExitCommand.h" />
 		<Unit filename="include/ListCommandsCommand.h" />
@@ -52,6 +53,7 @@
 		<Unit filename="src/CommandLog.cpp" />
 		<Unit filename="src/DisplayDateCommand.cpp" />
 		<Unit filename="src/DisplayHelpCommand.cpp" />
+		<Unit filename="src/DisplayHistoryCommand.cpp" />
 		<Unit filename="src/DisplayVersionCommand.cpp" />
 		<Unit filename="src/ExitCommand.cpp" />
 		<Unit filename="src/ListCommandsCommand.cpp" />
