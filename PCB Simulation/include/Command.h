@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 
+#include "PCBController.h"
+
 class Command
 {
 public:
@@ -23,6 +25,9 @@ public:
     void setCommandList(std::vector<Command*>*);
     std::vector<Command*>* getCommandList();
 
+    void setPCBController(PCBController*);
+    PCBController* getPCBController();
+
 private:
     std::string commandName;
     std::string commandDesc;
@@ -30,6 +35,7 @@ private:
     std::string helpInfo;
 
     std::vector<Command*>* commandList;
+    PCBController* pcbController;
 };
 
 #endif // COMMAND_H

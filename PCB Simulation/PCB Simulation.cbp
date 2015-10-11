@@ -32,7 +32,33 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Command.h" />
+		<Unit filename="include/CommandListener.h" />
+		<Unit filename="include/CommandLog.h" />
+		<Unit filename="include/DisplayDateCommand.h" />
+		<Unit filename="include/DisplayHelpCommand.h" />
+		<Unit filename="include/DisplayHistoryCommand.h" />
+		<Unit filename="include/DisplayVersionCommand.h" />
+		<Unit filename="include/ExitCommand.h" />
+		<Unit filename="include/ListCommandsCommand.h" />
+		<Unit filename="include/SetAliasCommand.h" />
+		<Unit filename="include/SetDateCommand.h" />
+		<Unit filename="include/System.h" />
+		<Unit filename="include/ViewDirectoryCommand.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Command.cpp" />
+		<Unit filename="src/CommandListener.cpp" />
+		<Unit filename="src/CommandLog.cpp" />
+		<Unit filename="src/DisplayDateCommand.cpp" />
+		<Unit filename="src/DisplayHelpCommand.cpp" />
+		<Unit filename="src/DisplayHistoryCommand.cpp" />
+		<Unit filename="src/DisplayVersionCommand.cpp" />
+		<Unit filename="src/ExitCommand.cpp" />
+		<Unit filename="src/ListCommandsCommand.cpp" />
+		<Unit filename="src/SetAliasCommand.cpp" />
+		<Unit filename="src/SetDateCommand.cpp" />
+		<Unit filename="src/System.cpp" />
+		<Unit filename="src/ViewDirectoryCommand.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

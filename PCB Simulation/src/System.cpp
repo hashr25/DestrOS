@@ -3,7 +3,10 @@
 System::System()
 {
     running = true;
+
     log = new CommandLog;
+    pcbController = new PCBController;
+
     initCommands();
     welcome();
 }

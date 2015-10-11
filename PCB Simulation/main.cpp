@@ -16,7 +16,7 @@ void testCommands();
 int main()
 {
     /// ///////////////////////////
-    /// Uncomment when actively running
+    /// Uncomment system when actively running
 
     System sys;
     sys.run();

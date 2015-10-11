@@ -44,3 +44,13 @@ std::vector<Command*>* Command::getCommandList()
 {
     return commandList;
 }
+
+void Command::setPCBController(PCBController* pcbController)
+{
+    this -> pcbController = pcbControler;
+}
+
+PCBController* Command::getPCBController()
+{
+    return pcbControler;
+}
