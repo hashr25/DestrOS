@@ -4,8 +4,3 @@ DeletePCBCommand::DeletePCBCommand()
 {
     //ctor
 }
-
-DeletePCBCommand::~DeletePCBCommand()
-{
-    //dtor
-}

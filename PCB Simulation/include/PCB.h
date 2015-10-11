@@ -14,8 +14,9 @@
 #define PRIORITY_MIN    -127
 #define PRIORITY_MAX    128
 
-#include <string>
-#include <assert.h>
+#include <iostream> //std::cout, std::endl //Used for printPCB()
+#include <string> //std::string
+#include <assert.h> //assert()
 
 class PCB
 {

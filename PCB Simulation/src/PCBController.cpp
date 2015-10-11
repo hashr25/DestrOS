@@ -37,7 +37,7 @@ PCB* PCBController::SetupPCB(std::string processName, short processPriority, boo
             newProcess -> setName(processName);
             newProcess -> setPriority(processPriority);
             newProcess -> setClass(processClass);
-            newProcess -> setState(RUNNING);
+            newProcess -> setState(READY);
         }
         else
         {
@@ -48,6 +48,8 @@ PCB* PCBController::SetupPCB(std::string processName, short processPriority, boo
     {
         std::cout << "Already a process with that name" << std::endl;
     }
+
+    return newProcess;
 }
 
 PCB* PCBController::FindPCB(std::string processName)

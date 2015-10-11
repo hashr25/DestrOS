@@ -9,7 +9,7 @@ class CreatePCBCommand : public Command
 public:
     CreatePCBCommand(PCBController*);
 
-    void execute();
+    void execute(std::string);
 private:
 };
 
