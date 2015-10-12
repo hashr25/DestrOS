@@ -23,6 +23,9 @@ public:
     void RemovePCB(PCB*);
 /// ///////////////////////////////////////////
 
+    PCBQueue* getReadyQueue();
+    PCBQueue* getBlockedQueue();
+
 private:
     PCBQueue* readyQueue;
     PCBQueue* blockedQueue;

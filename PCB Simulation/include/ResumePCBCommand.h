@@ -7,7 +7,9 @@
 class ResumePCBCommand : public Command
 {
     public:
-        ResumePCBCommand();
+        ResumePCBCommand(PCBController*);
+
+        void execute(std::string);
     protected:
     private:
 };

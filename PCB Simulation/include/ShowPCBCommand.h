@@ -7,8 +7,10 @@
 class ShowPCBCommand : public Command
 {
     public:
-        ShowPCBCommand();
-    protected:
+        ShowPCBCommand(PCBController*);
+
+        void execute(std::string);
+
     private:
 };
 

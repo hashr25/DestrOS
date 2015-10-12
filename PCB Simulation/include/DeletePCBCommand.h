@@ -7,7 +7,9 @@
 class DeletePCBCommand : public Command
 {
     public:
-        DeletePCBCommand();
+        DeletePCBCommand(PCBController*);
+
+        void execute(std::string);
 
     protected:
     private:

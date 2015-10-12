@@ -7,7 +7,9 @@
 class ShowReadyPCBCommand : public Command
 {
     public:
-        ShowReadyPCBCommand();
+        ShowReadyPCBCommand(PCBController*);
+
+        void execute(std::string);
     protected:
     private:
 };

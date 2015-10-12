@@ -7,7 +7,9 @@
 class UnblockPCBCommand : public Command
 {
     public:
-        UnblockPCBCommand();
+        UnblockPCBCommand(PCBController*);
+
+        void execute(std::string);
     protected:
     private:
 };

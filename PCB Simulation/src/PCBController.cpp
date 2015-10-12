@@ -22,6 +22,7 @@ PCB* PCBController::AllocatePCB()
 void PCBController::FreePCB(PCB* pcb)
 {
     delete pcb;
+    pcb = NULL;
 }
 
 PCB* PCBController::SetupPCB(std::string processName, short processPriority, bool processClass)
@@ -108,3 +109,14 @@ void PCBController::RemovePCB(PCB* pcb)
 }
 
 /// ////////////////////////////////////////////
+
+PCBQueue* PCBController::getReadyQueue()
+{
+    return readyQueue;
+}
+
+
+PCBQueue* PCBController::getBlockedQueue()
+{
+    return blockedQueue;
+}

@@ -7,9 +7,10 @@
 class SetPCBPriorityCommand : public Command
 {
     public:
-        SetPCBPriorityCommand();
-        virtual ~SetPCBPriorityCommand();
-    protected:
+        SetPCBPriorityCommand(PCBController*);
+
+        void execute(std::string);
+
     private:
 };
 

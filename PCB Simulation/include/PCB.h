@@ -42,6 +42,10 @@ public:
     void setMemory(int);
     int getMemory();
 
+    ///Methods
+    void printPCB();
+    void printPCBSmall();
+
 private:
     ///Data
     std::string processName;
@@ -53,8 +57,7 @@ private:
 
     int memory;
 
-    ///Methods
-    void printPCB();
+
 };
 
 #endif // PCB_H

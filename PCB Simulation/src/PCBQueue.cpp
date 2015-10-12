@@ -9,21 +9,17 @@ PCBQueue::PCBQueue()
 
 void PCBQueue::insert(PCB* newPCB)
 {
-    PCBNode* currentNode = head;
     PCBNode* newNode = new PCBNode(newPCB);
 
-    while(currentNode != NULL)
-    {
-        currentNode = currentNode -> getNext();
-    }
 
     if(head == NULL)
     {
         head = newNode;
+        tail = newNode;
     }
     else
     {
-        currentNode -> setNext(newNode);
+        tail -> setNext(newNode);
     }
 
     tail = newNode;
@@ -69,6 +65,7 @@ PCB* PCBQueue::remove(PCB* pcb)
         }
     }
 
+    size--;
     return pcb;
 }
 

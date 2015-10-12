@@ -7,7 +7,9 @@
 class ShowBlockedPCBCommand : public Command
 {
     public:
-        ShowBlockedPCBCommand();
+        ShowBlockedPCBCommand(PCBController*);
+
+        void execute(std::string);
     protected:
     private:
 };

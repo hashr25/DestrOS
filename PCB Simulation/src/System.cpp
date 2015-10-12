@@ -21,12 +21,14 @@ System::~System()
     delete commandList;
 
     delete log;
+    delete pcbController;
 }
 
 void System::initCommands()
 {
     commandList = new std::vector<Command*>;
 
+    ///Project 1 Commands
     Command* cmd1 = new DisplayHelpCommand(commandList);
     commandList -> push_back(cmd1);
 
@@ -51,8 +53,42 @@ void System::initCommands()
     Command* cmd8 = new DisplayHistoryCommand(log);
     commandList -> push_back(cmd8);
 
-    Command* cmd9 = new ExitCommand;
+    ///Project 1 Commands
+    Command* cmd9 = new CreatePCBCommand(pcbController);
     commandList -> push_back(cmd9);
+
+    Command* cmd10 = new DeletePCBCommand(pcbController);
+    commandList -> push_back(cmd10);
+
+    Command* cmd11 = new BlockPCBCommand(pcbController);
+    commandList -> push_back(cmd11);
+
+    Command* cmd12 = new UnblockPCBCommand(pcbController);
+    commandList -> push_back(cmd12);
+
+    Command* cmd13 = new SuspendPCBCommand(pcbController);
+    commandList -> push_back(cmd13);
+
+    Command* cmd14 = new ResumePCBCommand(pcbController);
+    commandList -> push_back(cmd14);
+
+    Command* cmd15 = new SetPCBPriorityCommand(pcbController);
+    commandList -> push_back(cmd15);
+
+    Command* cmd16 = new ShowPCBCommand(pcbController);
+    commandList -> push_back(cmd16);
+
+    Command* cmd17 = new ShowAllPCBCommand(pcbController);
+    commandList -> push_back(cmd17);
+
+    Command* cmd18 = new ShowReadyPCBCommand(pcbController);
+    commandList -> push_back(cmd18);
+
+    Command* cmd19 = new ShowBlockedPCBCommand(pcbController);
+    commandList -> push_back(cmd19);
+
+    Command* cmd20 = new ExitCommand;
+    commandList -> push_back(cmd20);
 }
 
 void System::welcome()

@@ -35,7 +35,7 @@ bool PCB::getClass()
 void PCB::setPriority(short priority)
 {
     ///Testing purposes
-    assert((priority < -127 || priority > 128) && "Priority must be between -127 and 128");
+    assert((priority >= -127 || priority <= 128) && "Priority must be between -127 and 128");
 
     this -> priority = priority;
 }
@@ -49,7 +49,7 @@ short PCB::getPriority()
 void PCB::setState(short state)
 {
     ///Testing purposes
-    assert(priority < READY);
+    assert((state >= RUNNING && state <= BLOCKED) && "State must be a valid state");
 
     this -> state = state;
 }
@@ -125,4 +125,45 @@ void PCB::printPCB()
 
 ///Memory
     std::cout << "Process Memory:   " << memory << std::endl;
+}
+
+void PCB::printPCBSmall()
+{
+    ///Process name
+    std::cout << "\nProcess Name: " << processName << " - ";
+
+///Process class
+    std::cout << "Class: ";
+    if(processClass == APPLICATION_TYPE)
+    {
+        std::cout << "Application - ";
+    }
+    else if(processClass == SYSTEM_TYPE)
+    {
+        std::cout << "System - ";
+    }
+
+///Process priority
+    std::cout << "Priority: " << priority << " - ";
+
+///Process State
+    std::cout << "Process State: ";
+    ///Suspended or not...
+    if(suspended)
+    {
+        std::cout << "S-";
+    }
+    ///Running/Ready/Blocked
+    if(state == RUNNING)
+    {
+        std::cout << "Running ";
+    }
+    else if(state == READY)
+    {
+        std::cout << "Ready ";
+    }
+    else if(state == BLOCKED)
+    {
+        std::cout << "Blocked ";
+    }
 }

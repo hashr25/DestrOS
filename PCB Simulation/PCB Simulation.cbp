@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,32 +34,62 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/BlockPCBCommand.h" />
 		<Unit filename="include/Command.h" />
 		<Unit filename="include/CommandListener.h" />
 		<Unit filename="include/CommandLog.h" />
+		<Unit filename="include/CreatePCBCommand.h" />
+		<Unit filename="include/DeletePCBCommand.h" />
 		<Unit filename="include/DisplayDateCommand.h" />
 		<Unit filename="include/DisplayHelpCommand.h" />
 		<Unit filename="include/DisplayHistoryCommand.h" />
 		<Unit filename="include/DisplayVersionCommand.h" />
 		<Unit filename="include/ExitCommand.h" />
 		<Unit filename="include/ListCommandsCommand.h" />
+		<Unit filename="include/PCB.h" />
+		<Unit filename="include/PCBController.h" />
+		<Unit filename="include/PCBNode.h" />
+		<Unit filename="include/PCBQueue.h" />
+		<Unit filename="include/ResumePCBCommand.h" />
 		<Unit filename="include/SetAliasCommand.h" />
 		<Unit filename="include/SetDateCommand.h" />
+		<Unit filename="include/SetPCBPriorityCommand.h" />
+		<Unit filename="include/ShowAllPCBCommand.h" />
+		<Unit filename="include/ShowBlockedPCBCommand.h" />
+		<Unit filename="include/ShowPCBCommand.h" />
+		<Unit filename="include/ShowReadyPCBCommand.h" />
+		<Unit filename="include/SuspendPCBCommand.h" />
 		<Unit filename="include/System.h" />
+		<Unit filename="include/UnblockPCBCommand.h" />
 		<Unit filename="include/ViewDirectoryCommand.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/BlockPCBCommand.cpp" />
 		<Unit filename="src/Command.cpp" />
 		<Unit filename="src/CommandListener.cpp" />
 		<Unit filename="src/CommandLog.cpp" />
+		<Unit filename="src/CreatePCBCommand.cpp" />
+		<Unit filename="src/DeletePCBCommand.cpp" />
 		<Unit filename="src/DisplayDateCommand.cpp" />
 		<Unit filename="src/DisplayHelpCommand.cpp" />
 		<Unit filename="src/DisplayHistoryCommand.cpp" />
 		<Unit filename="src/DisplayVersionCommand.cpp" />
 		<Unit filename="src/ExitCommand.cpp" />
 		<Unit filename="src/ListCommandsCommand.cpp" />
+		<Unit filename="src/PCB.cpp" />
+		<Unit filename="src/PCBController.cpp" />
+		<Unit filename="src/PCBNode.cpp" />
+		<Unit filename="src/PCBQueue.cpp" />
+		<Unit filename="src/ResumePCBCommand.cpp" />
 		<Unit filename="src/SetAliasCommand.cpp" />
 		<Unit filename="src/SetDateCommand.cpp" />
+		<Unit filename="src/SetPCBPriorityCommand.cpp" />
+		<Unit filename="src/ShowAllPCBCommand.cpp" />
+		<Unit filename="src/ShowBlockedPCBCommand.cpp" />
+		<Unit filename="src/ShowPCBCommand.cpp" />
+		<Unit filename="src/ShowReadyPCBCommand.cpp" />
+		<Unit filename="src/SuspendPCBCommand.cpp" />
 		<Unit filename="src/System.cpp" />
+		<Unit filename="src/UnblockPCBCommand.cpp" />
 		<Unit filename="src/ViewDirectoryCommand.cpp" />
 		<Extensions>
 			<code_completion />

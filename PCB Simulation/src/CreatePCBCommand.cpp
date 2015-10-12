@@ -28,9 +28,13 @@ void CreatePCBCommand::execute(std::string arg)
             std::cin.clear();
             std::cin.ignore(100, '\n');
         }
-        else
+        else if(getPCBController() -> FindPCB(processName) == NULL)
         {
             goodInput = true;
+        }
+        else
+        {
+            std::cout << "Process name must be unique." << std::endl;
         }
     }
 
@@ -40,7 +44,7 @@ void CreatePCBCommand::execute(std::string arg)
     {
         std::string userInput = "";
 
-        std::cout << "Enter the type of the process(A for application or S for system): ";
+        std::cout << "Enter the class of the process(A for application or S for system): ";
         std::cin >> userInput;
 
         if(std::cin.fail())
@@ -57,6 +61,10 @@ void CreatePCBCommand::execute(std::string arg)
         {
             goodInput = true;
             processClass = SYSTEM_TYPE;
+        }
+        else
+        {
+            std::cout << "Class must be valid." << std::endl;
         }
     }
 
@@ -78,6 +86,10 @@ void CreatePCBCommand::execute(std::string arg)
         {
             goodInput = true;
             processPriority = userInput;
+        }
+        else
+        {
+            std::cout << "Priority must be valid." << std::endl;
         }
     }
 
