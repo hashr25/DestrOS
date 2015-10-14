@@ -42,6 +42,16 @@ public:
     void setMemory(int);
     int getMemory();
 
+    void setTimeRemaining(int);
+    int getTimeRemaining();
+
+    void setTimeOfArrival(int);
+    int getTimeOfArrival();
+
+    void setPercentageOfCPU(int);
+    int getPercentageOfCPU();
+
+
     ///Methods
     void printPCB();
     void printPCBSmall();
@@ -57,7 +67,9 @@ private:
 
     int memory;
 
-
+    int timeRemaining;
+    int timeOfArrival;
+    int percentageOfCPU;
 };
 
 #endif // PCB_H

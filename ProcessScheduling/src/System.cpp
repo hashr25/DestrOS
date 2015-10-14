@@ -53,7 +53,8 @@ void System::initCommands()
     Command* cmd8 = new DisplayHistoryCommand(log);
     commandList -> push_back(cmd8);
 
-    ///Project 1 Commands
+    ///Project 2 Commands
+    /*
     Command* cmd9 = new CreatePCBCommand(pcbController);
     commandList -> push_back(cmd9);
 
@@ -65,7 +66,7 @@ void System::initCommands()
 
     Command* cmd12 = new UnblockPCBCommand(pcbController);
     commandList -> push_back(cmd12);
-
+    */
     Command* cmd13 = new SuspendPCBCommand(pcbController);
     commandList -> push_back(cmd13);
 

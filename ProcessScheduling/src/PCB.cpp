@@ -80,6 +80,40 @@ int PCB::getMemory()
 {
     return memory;
 }
+
+void PCB::setTimeRemaining(int timeRemaining)
+{
+    this -> timeRemaining = timeRemaining;
+}
+
+int PCB::getTimeRemaining()
+{
+    return timeRemaining;
+}
+
+
+void PCB::setTimeOfArrival(int timeOfArrival)
+{
+    this -> timeOfArrival = timeOfArrival;
+}
+
+int PCB::getTimeOfArrival()
+{
+    return timeOfArrival;
+}
+
+
+void PCB::setPercentageOfCPU(int percentageOfCPU)
+{
+    this -> percentageOfCPU = percentageOfCPU;
+}
+
+int PCB::getPercentageOfCPU()
+{
+    return percentageOfCPU;
+}
+
+
 /// /////////////////////////////////////////////////
 
 ///Used for the commands to show PCBs, no other reason to use
