@@ -53,6 +53,7 @@
 		<Unit filename="include/ProcessReader.h" />
 		<Unit filename="include/ProcessScheduler.h" />
 		<Unit filename="include/ResumePCBCommand.h" />
+		<Unit filename="include/SJFCommand.h" />
 		<Unit filename="include/SetAliasCommand.h" />
 		<Unit filename="include/SetDateCommand.h" />
 		<Unit filename="include/SetPCBPriorityCommand.h" />
@@ -85,6 +86,7 @@
 		<Unit filename="src/ProcessReader.cpp" />
 		<Unit filename="src/ProcessScheduler.cpp" />
 		<Unit filename="src/ResumePCBCommand.cpp" />
+		<Unit filename="src/SJFCommand.cpp" />
 		<Unit filename="src/SetAliasCommand.cpp" />
 		<Unit filename="src/SetDateCommand.cpp" />
 		<Unit filename="src/SetPCBPriorityCommand.cpp" />

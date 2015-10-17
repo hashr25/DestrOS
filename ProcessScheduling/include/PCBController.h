@@ -21,14 +21,22 @@ public:
     PCB* FindPCB(std::string);
     void InsertPCB(PCB*);
     void RemovePCB(PCB*);
+    void RemovePCB();
 /// ///////////////////////////////////////////
+
+    void runPCB(PCB*);
+    void runNextPCB();
+    void completePCB();
 
     PCBQueue* getReadyQueue();
     PCBQueue* getBlockedQueue();
 
+    PCB* getRunningProcess();
+
 private:
     PCBQueue* readyQueue;
     PCBQueue* blockedQueue;
+    PCB* runningProcess;
 };
 
 #endif // PCBCONTROLLER_H

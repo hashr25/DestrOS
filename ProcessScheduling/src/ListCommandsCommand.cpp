@@ -10,7 +10,7 @@ ListCommandsCommand::ListCommandsCommand(std::vector<Command*>* cmdList)
 
 void ListCommandsCommand::execute(std::string arg)
 {
-    for(int i = 0; i < getCommandList()->size(); i++)
+    for(unsigned int i = 0; i < getCommandList()->size(); i++)
     {
         std::cout << getCommandList()->at(i)->getName() << " - " << getCommandList()->at(i)->getDesc() << std::endl;
     }

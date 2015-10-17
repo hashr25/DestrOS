@@ -61,12 +61,12 @@ void testCommands()
     Command* cmd5 = new ExitCommand;
     cmdList -> push_back(cmd5);
 
-    for(int i = 0; i < cmdList -> size(); i++)
+    for(unsigned int i = 0; i < cmdList -> size(); i++)
     {
         cmdList -> at(i) -> execute("");
     }
 
-    for(int i = 0; i < cmdList -> size(); i++)
+    for(unsigned int i = 0; i < cmdList -> size(); i++)
     {
         delete cmdList -> at(i);
     }

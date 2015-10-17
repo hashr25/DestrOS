@@ -45,7 +45,7 @@ std::string CommandListener::getArgument(std::string userInput)
     std::string arg = "";
     int space = 42;
 
-    for(int i = 0; i < userInput.size(); i++)
+    for(unsigned int i = 0; i < userInput.size(); i++)
     {
         if(userInput.at(i) == ' ')
         {
@@ -68,7 +68,7 @@ Command* CommandListener::decipherCommand(std::string cmd, std::vector<Command*>
 {
     Command* command = NULL;
 
-    for(int i = 0; i < cmdList -> size(); i++)
+    for(unsigned int i = 0; i < cmdList -> size(); i++)
     {
         if(cmdList -> at(i) -> getName() == cmd)
         {

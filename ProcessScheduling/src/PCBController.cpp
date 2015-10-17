@@ -108,7 +108,32 @@ void PCBController::RemovePCB(PCB* pcb)
     }
 }
 
+void PCBController::RemovePCB()
+{
+    readyQueue -> remove();
+}
+
 /// ////////////////////////////////////////////
+
+void PCBController::runPCB(PCB* pcb)
+{
+    runningProcess = pcb;
+    RemovePCB(pcb);
+    runningProcess -> setState(RUNNING);
+}
+
+void PCBController::runNextPCB()
+{
+    runningProcess = getReadyQueue() -> getHead() -> getPCB();
+    RemovePCB();
+    runningProcess -> setState(RUNNING);
+}
+
+void PCBController::completePCB()
+{
+    delete runningProcess;
+    runningProcess = NULL;
+}
 
 PCBQueue* PCBController::getReadyQueue()
 {
@@ -119,4 +144,9 @@ PCBQueue* PCBController::getReadyQueue()
 PCBQueue* PCBController::getBlockedQueue()
 {
     return blockedQueue;
+}
+
+PCB* PCBController::getRunningProcess()
+{
+    return runningProcess;
 }

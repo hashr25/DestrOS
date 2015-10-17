@@ -161,8 +161,11 @@ void PCB::printPCB()
     std::cout << "Process Memory:   " << memory << std::endl;
 }
 
+
 void PCB::printPCBSmall()
 {
+    std::cout << timeRemaining << " ";
+
     ///Process name
     std::cout << "\nProcess Name: " << processName << " - ";
 
@@ -200,4 +203,5 @@ void PCB::printPCBSmall()
     {
         std::cout << "Blocked ";
     }
+    std::cout << std::endl;
 }

@@ -88,8 +88,12 @@ void System::initCommands()
     Command* cmd19 = new ShowBlockedPCBCommand(pcbController);
     commandList -> push_back(cmd19);
 
-    Command* cmd20 = new ExitCommand;
+    ///Project 3 Commands
+    Command* cmd20 = new SJFCommand(pcbController);
     commandList -> push_back(cmd20);
+
+    Command* cmd42 = new ExitCommand;
+    commandList -> push_back(cmd42);
 }
 
 void System::welcome()

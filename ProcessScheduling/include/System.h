@@ -33,6 +33,9 @@
 #include "ShowReadyPCBCommand.h"
 #include "ShowBlockedPCBCommand.h"
 
+///Project 3 Commands
+#include "SJFCommand.h"
+
 class System
 {
 public:

@@ -12,7 +12,7 @@ DisplayHistoryCommand::DisplayHistoryCommand(CommandLog* newLog)
 
 void DisplayHistoryCommand::execute(std::string argument)
 {
-    for(int i = 0; i < log -> getCommands() -> size(); i++)
+    for(unsigned int i = 0; i < log -> getCommands() -> size(); i++)
     {
         std::cout << log -> getCommands() -> at(i) -> getName(); ;
         if(log -> getArgs() -> at(i) != "")

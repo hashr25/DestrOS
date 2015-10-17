@@ -3,18 +3,20 @@
 
 #include "ProcessScheduler.h"
 
+#include "ShowReadyPCBCommand.h"
 
 class ShortestJobFirst : public ProcessScheduler
 {
     public:
-        ShortestJobFirst(std::vector<PCB*>);
+        ShortestJobFirst(PCBController*);
 
-        std::vector<PCB*> sortProcesses();
+        void sortProcesses();
         void runProcesses();
 
 
     private:
         void qSort(std::vector<PCB*>&, int, int);
+        void qSort(PCB**, int, int);
 };
 
 #endif // SHORTESTJOBFIRST_H

@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="include\ResumePCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\SetPCBPriorityCommand.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="220" topLine="0" />
+			<Cursor1 position="1705" topLine="42" />
 		</Cursor>
 	</File>
-	<File name="include\PCBQueue.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ShowAllPCBCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="255" topLine="0" />
+			<Cursor1 position="503" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\PCBController.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ShowBlockedPCBCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="575" topLine="5" />
+			<Cursor1 position="208" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\ExitCommand.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ShowPCBCommand.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="517" topLine="0" />
+			<Cursor1 position="1052" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="src\ShowReadyPCBCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="115" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\PCB.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -26,29 +31,34 @@
 			<Cursor1 position="893" topLine="33" />
 		</Cursor>
 	</File>
-	<File name="src\ListCommandsCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\SuspendPCBCommand.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9" topLine="0" />
+			<Cursor1 position="1589" topLine="3" />
 		</Cursor>
 	</File>
-	<File name="src\PCB.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\PCBController.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2376" topLine="115" />
+			<Cursor1 position="575" topLine="5" />
 		</Cursor>
 	</File>
-	<File name="src\PCBController.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\System.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="441" topLine="0" />
+			<Cursor1 position="3165" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\PCBQueue.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\UnblockPCBCommand.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="311" topLine="0" />
+			<Cursor1 position="109" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\ResumePCBCommand.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\PCBQueue.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1580" topLine="33" />
+			<Cursor1 position="255" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\ResumePCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="220" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\SetPCBPriorityCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -61,19 +71,9 @@
 			<Cursor1 position="224" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\SetPCBPriorityCommand.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1705" topLine="42" />
-		</Cursor>
-	</File>
 	<File name="include\ShowBlockedPCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="240" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\ShowAllPCBCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="503" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\ShowPCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -81,19 +81,9 @@
 			<Cursor1 position="212" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\ShowBlockedPCBCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="208" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="include\ShowReadyPCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="232" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\ShowPCBCommand.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1052" topLine="14" />
 		</Cursor>
 	</File>
 	<File name="include\SuspendPCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -101,19 +91,9 @@
 			<Cursor1 position="224" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\ShowReadyPCBCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="115" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="include\System.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="957" topLine="31" />
-		</Cursor>
-	</File>
-	<File name="src\SuspendPCBCommand.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1589" topLine="3" />
 		</Cursor>
 	</File>
 	<File name="include\UnblockPCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -121,44 +101,29 @@
 			<Cursor1 position="224" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\System.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ExitCommand.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3165" topLine="0" />
+			<Cursor1 position="517" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\UnblockPCBCommand.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ListCommandsCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="109" topLine="0" />
+			<Cursor1 position="9" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\BlockPCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="216" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="97" topLine="30" />
 		</Cursor>
 	</File>
-	<File name="src\BlockPCBCommand.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\PCB.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="660" topLine="11" />
-		</Cursor>
-	</File>
-	<File name="include\DeletePCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="194" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Command.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="769" topLine="26" />
-		</Cursor>
-	</File>
-	<File name="include\CreatePCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="206" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\CreatePCBCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="295" topLine="69" />
+			<Cursor1 position="2376" topLine="115" />
 		</Cursor>
 	</File>
 	<File name="include\Command.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -166,14 +131,49 @@
 			<Cursor1 position="714" topLine="12" />
 		</Cursor>
 	</File>
-	<File name="src\DeletePCBCommand.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\BlockPCBCommand.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1404" topLine="0" />
+			<Cursor1 position="660" topLine="11" />
 		</Cursor>
 	</File>
-	<File name="include\BlockPCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\PCBController.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="216" topLine="0" />
+			<Cursor1 position="441" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Command.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="769" topLine="26" />
+		</Cursor>
+	</File>
+	<File name="src\PCBQueue.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="311" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\CreatePCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="206" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\ResumePCBCommand.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1580" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="include\DeletePCBCommand.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="194" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\CreatePCBCommand.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="295" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="src\DeletePCBCommand.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1404" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

@@ -21,7 +21,7 @@ void DisplayHelpCommand::execute(std::string arg)
         ///Do the stuff with the cmd list
         int helpCommandIndex = 2007;
 
-        for(int i = 0; i < getCommandList() -> size(); i++)
+        for(unsigned int i = 0; i < getCommandList() -> size(); i++)
         {
             if (getCommandList() -> at(i) -> getName() == arg.substr(0, getCommandList() -> at(i) -> getName().size()))
             {
@@ -46,7 +46,7 @@ std::string DisplayHelpCommand::findListCommandName()
 {
     std::string name = "";
 
-    for(int i = 0; i < getCommandList() -> size(); i++)
+    for(unsigned int i = 0; i < getCommandList() -> size(); i++)
     {
         if(getCommandList() -> at(i) -> getDesc() == "Lists all valid commands.")
         {

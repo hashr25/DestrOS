@@ -7,7 +7,7 @@ ProcessReader::ProcessReader()
 
 
 
-PCB* parseLine(std::string line)
+PCB* ProcessReader::parseLine(std::string line)
 {
     std::string processName;
     bool processClass;
@@ -44,7 +44,7 @@ PCB* parseLine(std::string line)
 
 }
 
-std::vector<std::string> readProcessFile(std::string fileName)
+std::vector<std::string> ProcessReader::readProcessFile(std::string fileName)
 {
     std::vector<std::string> linesOfFile;
     std::ifstream inputFile(fileName.c_str());
@@ -58,13 +58,13 @@ std::vector<std::string> readProcessFile(std::string fileName)
     return linesOfFile;
 }
 
-std::vector<PCB*> readProcesses(std::string fileName)
+std::vector<PCB*> ProcessReader::readProcesses(std::string fileName)
 {
     std::vector<std::string> fileLines = readProcessFile(fileName);
     std::vector<PCB*> processes;
 
     ///For each line in the file
-    for(int i = 0; i < fileLines.size(); i++)
+    for(unsigned int i = 0; i < fileLines.size(); i++)
     {
         ///Add the process that was written on that line
         processes.push_back(parseLine(fileLines.at(i)));

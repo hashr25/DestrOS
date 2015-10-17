@@ -41,10 +41,23 @@ PCB* PCBQueue::remove()
 
 PCB* PCBQueue::remove(PCB* pcb)
 {
-    if(head -> getPCB() == pcb)
+    if(head -> getPCB() == pcb && size == 1)
     {
-        head = head -> getNext();
+        PCBNode* oldHeadTail = head;
+        head = NULL;
+        tail = NULL;
+        delete oldHeadTail;
+    }
+    else if(head -> getPCB() == pcb && size == 2)
+    {
         delete head;
+        head = tail;
+    }
+    else if(head -> getPCB() == pcb)
+    {
+        PCBNode* oldHead = head;
+        head = head -> getNext();
+        delete oldHead;
     }
     else
     {

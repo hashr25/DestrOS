@@ -42,7 +42,7 @@ Command* SetAliasCommand::getCommand(std::string arg)
 {
     Command* cmdToReturn = NULL;
 
-    for(int i = 0; i < getCommandList() -> size(); i++)
+    for(unsigned int i = 0; i < getCommandList() -> size(); i++)
     {
         if( getCommandList() -> at(i) -> getName() == arg)
         {
