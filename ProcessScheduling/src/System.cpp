@@ -92,6 +92,9 @@ void System::initCommands()
     Command* cmd20 = new SJFCommand(pcbController);
     commandList -> push_back(cmd20);
 
+    Command* cmd21 = new FIFOCommand(pcbController);
+    commandList -> push_back(cmd21);
+
     Command* cmd42 = new ExitCommand;
     commandList -> push_back(cmd42);
 }

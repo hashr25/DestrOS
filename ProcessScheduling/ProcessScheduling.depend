@@ -8,7 +8,7 @@
 	"ListCommandsCommand.h"
 	"ExitCommand.h"
 
-1445105680 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\system.h
+1445138199 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\system.h
 	<vector>
 	<string>
 	"CommandListener.h"
@@ -36,6 +36,7 @@
 	"ShowReadyPCBCommand.h"
 	"ShowBlockedPCBCommand.h"
 	"SJFCommand.h"
+	"FIFOCommand.h"
 
 1442892259 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\commandlistener.h
 	<iostream>
@@ -230,7 +231,7 @@
 1445112847 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcb.cpp
 	"PCB.h"
 
-1445105742 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\system.cpp
+1445138310 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\system.cpp
 	"System.h"
 
 1445048372 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\processreader.cpp
@@ -253,7 +254,7 @@
 	"PCB.h"
 	"ProcessReader.h"
 
-1445120278 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\shortestjobfirst.cpp
+1445134121 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\shortestjobfirst.cpp
 	"ShortestJobFirst.h"
 
 1445117097 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\shortestjobfirst.h
@@ -266,6 +267,20 @@
 	"ProcessReader.h"
 	"ShortestJobFirst.h"
 
-1445117892 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\sjfcommand.cpp
+1445120533 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\sjfcommand.cpp
 	"SJFCommand.h"
+
+1445131348 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\fifocommand.h
+	"Command.h"
+	"PCBController.h"
+	"FirstInFirstOut.h"
+
+1445138384 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\firstinfirstout.h
+	"ProcessScheduler.h"
+
+1445135994 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\fifocommand.cpp
+	"FIFOCommand.h"
+
+1445134157 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\firstinfirstout.cpp
+	"FirstInFirstOut.h"
 
