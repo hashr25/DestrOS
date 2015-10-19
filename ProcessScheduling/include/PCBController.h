@@ -27,6 +27,8 @@ public:
     void runPCB(PCB*);
     void runNextPCB();
     void completePCB();
+    void pausePCB();
+    PCB* findShortestPCB(int);
 
     PCBQueue* getReadyQueue();
     PCBQueue* getBlockedQueue();

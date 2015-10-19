@@ -56,23 +56,36 @@ void ShortestJobFirst::sortProcesses()
 
 void ShortestJobFirst::runProcesses()
 {
-    int totalRunTime = 0;
+    int currentRunningTime = 0;
+    int totalWaitingTime = 0;
+    int totalTurnAroundTime = 0;
     int totalProcesses = 0;
 
 
     std::ofstream outputFile;
     std::string fileName = "ShortestJobFirstResults.txt";
-    outputFile.open(fileName);
+    outputFile.open(fileName, std::ofstream::out | std::ofstream::trunc); /// Clear file contents while opening
 
     int size = getPCBController() -> getReadyQueue() -> getSize();
 
     for(unsigned int i = 0; i < size; i++)
     {
-        PCB* pcbToRun = getPCBController() -> getReadyQueue() -> getHead() -> getPCB();
+        PCB* pcbToRun = getPCBController() -> findShortestPCB(currentRunningTime);
 
         ///Run Process
         getPCBController() -> runPCB( pcbToRun );
         outputFile << "Running Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n";
+
+        ///Calculate Numbers for this process
+        int processTimeJustRan = pcbToRun -> getTimeRemaining();
+        currentRunningTime += processTimeJustRan;
+        totalWaitingTime +=processTimeJustRan;
+        totalTurnAroundTime += currentRunningTime - pcbToRun -> getTimeOfArrival();
+        totalProcesses++;
+
+        ///This scheduler runs till completion
+        pcbToRun -> setTimeRemaining(0);
+
 
         ///Process Details
         outputFile << "Process Details: \n";
@@ -80,20 +93,20 @@ void ShortestJobFirst::runProcesses()
         outputFile << "    Class:           " << pcbToRun -> getClass() << "\n";
         outputFile << "    Priority:        " << pcbToRun -> getPriority() << "\n";
         outputFile << "    Memory:          " << pcbToRun -> getMemory() << "\n";
+        outputFile << "    Execution Time:  " << pcbToRun -> getExecutionTime() << "\n";
         outputFile << "    Time Remaining:  " << pcbToRun -> getTimeRemaining() << "\n";
         outputFile << "    Time of Arrival: " << pcbToRun -> getTimeOfArrival() << "\n";
         outputFile << "    CPU %:           " << pcbToRun -> getPercentageOfCPU() << "\n";
 
+
         ///Finish Process
-        totalRunTime += getPCBController() -> getRunningProcess() -> getTimeRemaining();
-        totalProcesses++;
-
         outputFile << "Completing Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n\n";
-
         getPCBController() -> completePCB();
     }
 
-    outputFile << "Average Turn Around Time: " << totalRunTime / totalProcesses << "\n";
+    outputFile << "Total Time To Completion: " << totalWaitingTime << "\n";
+    outputFile << "Average Turn Around Time: " << totalTurnAroundTime / totalProcesses << "\n";
+    outputFile << "Average Waiting Time:     " << totalWaitingTime / totalProcesses << "\n";
 
     outputFile.close();
 }

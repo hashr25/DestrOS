@@ -4,6 +4,7 @@ PCBController::PCBController()
 {
     readyQueue = new PCBQueue;
     blockedQueue = new PCBQueue;
+    runningProcess = NULL;
 }
 
 PCBController::~PCBController()
@@ -133,6 +134,54 @@ void PCBController::completePCB()
 {
     delete runningProcess;
     runningProcess = NULL;
+}
+
+void PCBController::pausePCB()
+{
+    InsertPCB(runningProcess);
+    runningProcess = NULL;
+}
+
+PCB* PCBController::findShortestPCB(int currentTime)
+{
+    PCB* blankPCB = new PCB;
+    blankPCB -> setTimeRemaining(999999);///Massive time remaining
+    PCB* toReturn = blankPCB;
+
+    if(runningProcess != NULL)
+    {
+        blankPCB -> setTimeRemaining(runningProcess -> getTimeRemaining());
+    }
+
+    if(getReadyQueue() -> getHead() != NULL)
+    {
+        PCBNode* currentSpotInQueue = getReadyQueue() -> getHead();
+
+        while(currentSpotInQueue != NULL)
+        {
+            if( ( currentSpotInQueue -> getPCB() -> getTimeRemaining() <= toReturn -> getTimeRemaining() ) &&
+                ( currentTime >= currentSpotInQueue -> getPCB() -> getTimeOfArrival() ) )
+            {
+                toReturn = currentSpotInQueue -> getPCB();
+            }
+
+            currentSpotInQueue = currentSpotInQueue -> getNext();
+        }
+
+    }
+
+    if(toReturn == blankPCB)
+    {
+        toReturn = NULL;
+    }
+    delete blankPCB;
+
+    if(runningProcess != NULL && toReturn == NULL)
+    {
+        toReturn = runningProcess;
+    }
+
+    return toReturn;
 }
 
 PCBQueue* PCBController::getReadyQueue()

@@ -36,7 +36,8 @@ PCB* ProcessReader::parseLine(std::string line)
     process -> setClass(processClass);
     process -> setPriority(processPriority);
     process -> setMemory(processMemory);
-    process -> setTimeRemaining(processTimeRemaining);
+    process -> setExecutionTime(processTimeRemaining); //Same at beginning
+    process -> setTimeRemaining(processTimeRemaining); // ^^  ^^  ^^   ^^
     process -> setTimeOfArrival(processTimeOfArrival);
     process -> setPercentageOfCPU(processPercentageOfCPU);
 

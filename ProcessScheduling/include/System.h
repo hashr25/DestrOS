@@ -36,6 +36,7 @@
 ///Project 3 Commands
 #include "SJFCommand.h"
 #include "FIFOCommand.h"
+#include "STCFCommand.h"
 
 class System
 {

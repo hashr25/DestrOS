@@ -42,6 +42,9 @@ public:
     void setMemory(int);
     int getMemory();
 
+    void setExecutionTime(int);
+    int getExecutionTime();
+
     void setTimeRemaining(int);
     int getTimeRemaining();
 
@@ -67,6 +70,7 @@ private:
 
     int memory;
 
+    int executionTime;
     int timeRemaining;
     int timeOfArrival;
     int percentageOfCPU;

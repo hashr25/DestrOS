@@ -95,6 +95,9 @@ void System::initCommands()
     Command* cmd21 = new FIFOCommand(pcbController);
     commandList -> push_back(cmd21);
 
+    Command* cmd22 = new STCFCommand(pcbController);
+    commandList -> push_back(cmd22);
+
     Command* cmd42 = new ExitCommand;
     commandList -> push_back(cmd42);
 }

@@ -81,6 +81,16 @@ int PCB::getMemory()
     return memory;
 }
 
+void PCB::setExecutionTime(int executionTime)
+{
+    this -> executionTime = executionTime;
+}
+
+int PCB::getExecutionTime()
+{
+    return executionTime;
+}
+
 void PCB::setTimeRemaining(int timeRemaining)
 {
     this -> timeRemaining = timeRemaining;
