@@ -37,6 +37,7 @@
 #include "SJFCommand.h"
 #include "FIFOCommand.h"
 #include "STCFCommand.h"
+#include "FPPSCommand.h"
 
 class System
 {

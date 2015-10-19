@@ -184,6 +184,48 @@ PCB* PCBController::findShortestPCB(int currentTime)
     return toReturn;
 }
 
+PCB* PCBController::findHighestPriorityPCB(int currentTime)
+{
+    PCB* blankPCB = new PCB;
+    blankPCB -> setPriority(-127); //Min priority
+    PCB* toReturn = blankPCB;
+
+    if(runningProcess != NULL)
+    {
+        blankPCB -> setPriority(runningProcess -> getPriority());
+    }
+
+    if(getReadyQueue() -> getHead() != NULL)
+    {
+        PCBNode* currentSpotInQueue = getReadyQueue() -> getHead();
+
+        while(currentSpotInQueue != NULL)
+        {
+            if( ( currentSpotInQueue -> getPCB() -> getPriority() >= toReturn -> getPriority() ) &&
+                ( currentTime >= currentSpotInQueue -> getPCB() -> getTimeOfArrival() ) )
+            {
+                toReturn = currentSpotInQueue -> getPCB();
+            }
+
+            currentSpotInQueue = currentSpotInQueue -> getNext();
+        }
+
+    }
+
+    if(toReturn == blankPCB)
+    {
+        toReturn = NULL;
+    }
+    delete blankPCB;
+
+    if(runningProcess != NULL && toReturn == NULL)
+    {
+        toReturn = runningProcess;
+    }
+
+    return toReturn;
+}
+
 PCBQueue* PCBController::getReadyQueue()
 {
     return readyQueue;

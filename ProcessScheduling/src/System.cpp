@@ -98,6 +98,9 @@ void System::initCommands()
     Command* cmd22 = new STCFCommand(pcbController);
     commandList -> push_back(cmd22);
 
+    Command* cmd23 = new FPPSCommand(pcbController);
+    commandList -> push_back(cmd23);
+
     Command* cmd42 = new ExitCommand;
     commandList -> push_back(cmd42);
 }

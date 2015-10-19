@@ -1,0 +1,243 @@
+Running Process: TestProcessA1
+Process Details: 
+    Name:            TestProcessA1
+    Class:           0
+    Priority:        24
+    Memory:          128
+    Execution Time:  500
+    Time Remaining:  490
+    Time of Arrival: 0
+    CPU %:           25
+Pausing Process: TestProcessA1
+
+Running Process: TestProcessA2
+Process Details: 
+    Name:            TestProcessA2
+    Class:           0
+    Priority:        48
+    Memory:          128
+    Execution Time:  85
+    Time Remaining:  80
+    Time of Arrival: 10
+    CPU %:           25
+Pausing Process: TestProcessA2
+
+Running Process: TestProcessS2
+Process Details: 
+    Name:            TestProcessS2
+    Class:           1
+    Priority:        120
+    Memory:          128
+    Execution Time:  70
+    Time Remaining:  0
+    Time of Arrival: 15
+    CPU %:           7
+Completing Process: TestProcessS2
+
+Running Process: TestProcessS7
+Process Details: 
+    Name:            TestProcessS7
+    Class:           1
+    Priority:        102
+    Memory:          128
+    Execution Time:  250
+    Time Remaining:  0
+    Time of Arrival: 65
+    CPU %:           25
+Completing Process: TestProcessS7
+
+Running Process: TestProcessA6
+Process Details: 
+    Name:            TestProcessA6
+    Class:           0
+    Priority:        78
+    Memory:          128
+    Execution Time:  550
+    Time Remaining:  0
+    Time of Arrival: 50
+    CPU %:           80
+Completing Process: TestProcessA6
+
+Running Process: TestProcessA5
+Process Details: 
+    Name:            TestProcessA5
+    Class:           0
+    Priority:        65
+    Memory:          128
+    Execution Time:  900
+    Time Remaining:  0
+    Time of Arrival: 40
+    CPU %:           8
+Completing Process: TestProcessA5
+
+Running Process: TestProcessA10
+Process Details: 
+    Name:            TestProcessA10
+    Class:           0
+    Priority:        63
+    Memory:          128
+    Execution Time:  509
+    Time Remaining:  0
+    Time of Arrival: 90
+    CPU %:           90
+Completing Process: TestProcessA10
+
+Running Process: TestProcessS10
+Process Details: 
+    Name:            TestProcessS10
+    Class:           1
+    Priority:        42
+    Memory:          128
+    Execution Time:  5
+    Time Remaining:  0
+    Time of Arrival: 95
+    CPU %:           5
+Completing Process: TestProcessS10
+
+Running Process: TestProcessS4
+Process Details: 
+    Name:            TestProcessS4
+    Class:           1
+    Priority:        32
+    Memory:          128
+    Execution Time:  90
+    Time Remaining:  0
+    Time of Arrival: 35
+    CPU %:           12
+Completing Process: TestProcessS4
+
+Running Process: TestProcessA8
+Process Details: 
+    Name:            TestProcessA8
+    Class:           0
+    Priority:        24
+    Memory:          128
+    Execution Time:  530
+    Time Remaining:  0
+    Time of Arrival: 70
+    CPU %:           62
+Completing Process: TestProcessA8
+
+Running Process: TestProcessS5
+Process Details: 
+    Name:            TestProcessS5
+    Class:           1
+    Priority:        12
+    Memory:          128
+    Execution Time:  87
+    Time Remaining:  0
+    Time of Arrival: 45
+    CPU %:           36
+Completing Process: TestProcessS5
+
+Running Process: TestProcessS9
+Process Details: 
+    Name:            TestProcessS9
+    Class:           1
+    Priority:        0
+    Memory:          128
+    Execution Time:  505
+    Time Remaining:  0
+    Time of Arrival: 85
+    CPU %:           9
+Completing Process: TestProcessS9
+
+Running Process: TestProcessA9
+Process Details: 
+    Name:            TestProcessA9
+    Class:           0
+    Priority:        -1
+    Memory:          128
+    Execution Time:  78
+    Time Remaining:  0
+    Time of Arrival: 80
+    CPU %:           22
+Completing Process: TestProcessA9
+
+Running Process: TestProcessA7
+Process Details: 
+    Name:            TestProcessA7
+    Class:           0
+    Priority:        -2
+    Memory:          128
+    Execution Time:  135
+    Time Remaining:  0
+    Time of Arrival: 60
+    CPU %:           18
+Completing Process: TestProcessA7
+
+Running Process: TestProcessA4
+Process Details: 
+    Name:            TestProcessA4
+    Class:           0
+    Priority:        -6
+    Memory:          128
+    Execution Time:  150
+    Time Remaining:  0
+    Time of Arrival: 30
+    CPU %:           59
+Completing Process: TestProcessA4
+
+Running Process: TestProcessS3
+Process Details: 
+    Name:            TestProcessS3
+    Class:           1
+    Priority:        -12
+    Memory:          128
+    Execution Time:  125
+    Time Remaining:  0
+    Time of Arrival: 25
+    CPU %:           42
+Completing Process: TestProcessS3
+
+Running Process: TestProcessS1
+Process Details: 
+    Name:            TestProcessS1
+    Class:           1
+    Priority:        -25
+    Memory:          128
+    Execution Time:  50
+    Time Remaining:  0
+    Time of Arrival: 5
+    CPU %:           2
+Completing Process: TestProcessS1
+
+Running Process: TestProcessS8
+Process Details: 
+    Name:            TestProcessS8
+    Class:           1
+    Priority:        -54
+    Memory:          128
+    Execution Time:  53
+    Time Remaining:  0
+    Time of Arrival: 75
+    CPU %:           43
+Completing Process: TestProcessS8
+
+Running Process: TestProcessS6
+Process Details: 
+    Name:            TestProcessS6
+    Class:           1
+    Priority:        -92
+    Memory:          128
+    Execution Time:  555
+    Time Remaining:  0
+    Time of Arrival: 55
+    CPU %:           32
+Completing Process: TestProcessS6
+
+Running Process: TestProcessA3
+Process Details: 
+    Name:            TestProcessA3
+    Class:           0
+    Priority:        -120
+    Memory:          128
+    Execution Time:  300
+    Time Remaining:  0
+    Time of Arrival: 20
+    CPU %:           12
+Completing Process: TestProcessA3
+
+Total Time To Completion: 4957
+Average Turn Around Time: 0
+Average Waiting Time:     1
