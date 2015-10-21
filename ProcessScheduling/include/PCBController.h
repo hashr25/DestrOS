@@ -30,6 +30,7 @@ public:
     void pausePCB();
     PCB* findShortestPCB(int);
     PCB* findHighestPriorityPCB(int);
+    PCB* findNextPCB(PCB*);
 
     PCBQueue* getReadyQueue();
     PCBQueue* getBlockedQueue();

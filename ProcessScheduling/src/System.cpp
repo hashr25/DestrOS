@@ -101,6 +101,15 @@ void System::initCommands()
     Command* cmd23 = new FPPSCommand(pcbController);
     commandList -> push_back(cmd23);
 
+    Command* cmd24 = new RRCommand(pcbController);
+    commandList -> push_back(cmd24);
+
+    /*Command* cmd25 = new MLFQCommand(pcbController);
+    commandList -> push_back(cmd25);
+
+    Command* cmd26 = new LSCommand(pcbController);
+    commandList -> push_back(cmd26);*/
+
     Command* cmd42 = new ExitCommand;
     commandList -> push_back(cmd42);
 }

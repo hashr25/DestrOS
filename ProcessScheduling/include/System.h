@@ -38,6 +38,9 @@
 #include "FIFOCommand.h"
 #include "STCFCommand.h"
 #include "FPPSCommand.h"
+#include "RRCommand.h"
+//#include "MLFQCommand.h"
+//#include "LSCommand.h"
 
 class System
 {

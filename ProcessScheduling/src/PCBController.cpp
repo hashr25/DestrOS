@@ -226,6 +226,11 @@ PCB* PCBController::findHighestPriorityPCB(int currentTime)
     return toReturn;
 }
 
+PCB* findNextPCB(PCB* currentPCB)
+{
+
+}
+
 PCBQueue* PCBController::getReadyQueue()
 {
     return readyQueue;
