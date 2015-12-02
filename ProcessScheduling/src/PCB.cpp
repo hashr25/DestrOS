@@ -174,9 +174,7 @@ void PCB::printPCB()
 
 void PCB::printPCBSmall()
 {
-    std::cout << timeRemaining << " ";
-
-    ///Process name
+///Process name
     std::cout << "\nProcess Name: " << processName << " - ";
 
 ///Process class
@@ -200,7 +198,7 @@ void PCB::printPCBSmall()
     {
         std::cout << "S-";
     }
-    ///Running/Ready/Blocked
+///Running/Ready/Blocked
     if(state == RUNNING)
     {
         std::cout << "Running ";

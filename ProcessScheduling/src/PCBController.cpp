@@ -137,7 +137,8 @@ void PCBController::completePCB()
 }
 
 void PCBController::pausePCB()
-{
+{std::cout << "Inserting back into queue" << std::endl;
+    runningProcess -> setState(READY);
     InsertPCB(runningProcess);
     runningProcess = NULL;
 }
@@ -226,9 +227,33 @@ PCB* PCBController::findHighestPriorityPCB(int currentTime)
     return toReturn;
 }
 
-PCB* findNextPCB(PCB* currentPCB)
+PCB* PCBController::findNextInPriorityQueue(int minPriority, int maxPriority)
 {
+    PCB* toReturn = NULL;
 
+    if(getReadyQueue() -> getHead() != NULL)
+    {
+        PCBNode* currentSpotInQueue = getReadyQueue() -> getHead();
+
+        while(currentSpotInQueue != NULL)
+        {
+            if( ( currentSpotInQueue -> getPCB() -> getPriority() >= minPriority ) &&
+                ( currentSpotInQueue -> getPCB() -> getPriority() <= maxPriority ) )
+            {
+                toReturn = currentSpotInQueue -> getPCB();
+                break;
+            }
+
+            currentSpotInQueue = currentSpotInQueue -> getNext();
+        }
+    }
+
+    if(toReturn == NULL)
+    {
+        toReturn = runningProcess;
+    }
+
+    return toReturn;
 }
 
 PCBQueue* PCBController::getReadyQueue()

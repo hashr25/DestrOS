@@ -50,6 +50,8 @@
 		<Unit filename="include/FirstInFirstOut.h" />
 		<Unit filename="include/FixedPriorityPreEmptive.h" />
 		<Unit filename="include/ListCommandsCommand.h" />
+		<Unit filename="include/MLFQCommand.h" />
+		<Unit filename="include/MultilevelFeedbackQueue.h" />
 		<Unit filename="include/PCB.h" />
 		<Unit filename="include/PCBController.h" />
 		<Unit filename="include/PCBNode.h" />
@@ -61,6 +63,7 @@
 		<Unit filename="include/RoundRobin.h" />
 		<Unit filename="include/SJFCommand.h" />
 		<Unit filename="include/STCFCommand.h" />
+		<Unit filename="include/SchedulePCB.h" />
 		<Unit filename="include/SetAliasCommand.h" />
 		<Unit filename="include/SetDateCommand.h" />
 		<Unit filename="include/SetPCBPriorityCommand.h" />
@@ -91,6 +94,8 @@
 		<Unit filename="src/FirstInFirstOut.cpp" />
 		<Unit filename="src/FixedPriorityPreEmptive.cpp" />
 		<Unit filename="src/ListCommandsCommand.cpp" />
+		<Unit filename="src/MLFQCommand.cpp" />
+		<Unit filename="src/MultilevelFeedbackQueue.cpp" />
 		<Unit filename="src/PCB.cpp" />
 		<Unit filename="src/PCBController.cpp" />
 		<Unit filename="src/PCBNode.cpp" />
@@ -102,6 +107,7 @@
 		<Unit filename="src/RoundRobin.cpp" />
 		<Unit filename="src/SJFCommand.cpp" />
 		<Unit filename="src/STCFCommand.cpp" />
+		<Unit filename="src/SchedulePCB.cpp" />
 		<Unit filename="src/SetAliasCommand.cpp" />
 		<Unit filename="src/SetDateCommand.cpp" />
 		<Unit filename="src/SetPCBPriorityCommand.cpp" />

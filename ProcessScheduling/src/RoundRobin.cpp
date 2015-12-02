@@ -32,7 +32,7 @@ void RoundRobin::runProcesses(int timeQuantum)
     std::string fileName = "RoundRobinResults.txt";
     outputFile.open(fileName, std::ofstream::out | std::ofstream::trunc); /// Clear file contents while opening
 
-    outputFile << "Performing Round Robin with time quantum of " << timeQuantum << "\n\n;
+    outputFile << "Performing Round Robin with time quantum of " << timeQuantum << "\n\n";
 
     while(getPCBController() -> getReadyQueue() -> getHead() != NULL || getPCBController() -> getRunningProcess() != NULL)
     {
