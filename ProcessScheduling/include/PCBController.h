@@ -22,20 +22,24 @@ public:
     void InsertPCB(PCB*);
     void RemovePCB(PCB*);
     void RemovePCB();
+
 /// ///////////////////////////////////////////
 
     void runPCB(PCB*);
     void runNextPCB();
     void completePCB();
     void pausePCB();
+
     PCB* findShortestPCB(int);
     PCB* findHighestPriorityPCB(int);
     PCB* findNextInPriorityQueue(int, int);
+    PCB* findTicketedPCB(int);
 
     PCBQueue* getReadyQueue();
     PCBQueue* getBlockedQueue();
 
     PCB* getRunningProcess();
+    void setTickets(int);
 
 private:
     PCBQueue* readyQueue;

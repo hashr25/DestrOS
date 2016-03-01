@@ -42,7 +42,7 @@ void MultilevelFeedbackQueue::runProcesses(int numberOfQueues, int timeQuantum, 
 
     while(getPCBController() -> getReadyQueue() -> getHead() != NULL || getPCBController() -> getRunningProcess() != NULL)
     {
-        std::cout << "Cycle #" << cycleTracker << std::endl;
+        //std::cout << "Cycle #" << cycleTracker << std::endl;
 
 
         ///No process running
@@ -51,20 +51,22 @@ void MultilevelFeedbackQueue::runProcesses(int numberOfQueues, int timeQuantum, 
             ///Current Queue has no processes in it
             while(getPCBController() -> findNextInPriorityQueue(currentMinPriority, currentMaxPriority) == NULL)
             {
-                std::cout << "Switching queue from " << currentQueue;
+                //std::cout << "Switching queue from " << currentQueue;
 
                 cycleTracker = 0;
 
                 //Queue 1 is the bottom, queue #numberOfQueues is top
                 if(currentQueue == 1)
-                {std::cout << "going back to top queue" << std::endl;
+                {
+                    //std::cout << "going back to top queue" << std::endl;
                     currentQueue = numberOfQueues;
                 }
                 else
-                {std::cout << "going down a queue" << std::endl;
+                {
+                    //std::cout << "going down a queue" << std::endl;
                     currentQueue--;
                 }
-                std::cout << " to " << currentQueue << std::endl;
+                //std::cout << " to " << currentQueue << std::endl;
 
                 currentMinPriority = getMinPriority(numberOfQueues, currentQueue);
                 currentMaxPriority = getMaxPriority(numberOfQueues, currentQueue);
@@ -72,12 +74,12 @@ void MultilevelFeedbackQueue::runProcesses(int numberOfQueues, int timeQuantum, 
 
             ///Run a process
             pcbToRun = getPCBController() -> findNextInPriorityQueue(currentMinPriority, currentMaxPriority);
-            std::cout << "Got " << pcbToRun -> getName() << " to run in queue " << currentQueue << std::endl;
+            //std::cout << "Got " << pcbToRun -> getName() << " to run in queue " << currentQueue << std::endl;
 
             ///Run Process
             getPCBController() -> runPCB( pcbToRun );
             outputFile << "Running Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n";
-            std::cout << "Running Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n";
+            //std::cout << "Running Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n";
         }
 
 
@@ -113,7 +115,7 @@ void MultilevelFeedbackQueue::runProcesses(int numberOfQueues, int timeQuantum, 
             outputFile << "    CPU %:           " << pcbToRun -> getPercentageOfCPU() << "\n";
 
             outputFile << "Pausing Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n\n";
-            std::cout << "Pausing Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n\n";
+            //std::cout << "Pausing Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n\n";
 
             ShowReadyPCBCommand sr(getPCBController());
             sr.execute("");
@@ -122,7 +124,7 @@ void MultilevelFeedbackQueue::runProcesses(int numberOfQueues, int timeQuantum, 
             getPCBController() -> pausePCB();
             pcbToRun = NULL;
 
-            std::cout << "After Insert" << std::endl;
+            //std::cout << "After Insert" << std::endl;
             sr.execute("");
 
             quantumTracker = 0;
@@ -145,7 +147,7 @@ void MultilevelFeedbackQueue::runProcesses(int numberOfQueues, int timeQuantum, 
 
             ///Finish Process
             outputFile << "Completing Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n\n";
-            std::cout << "Completing Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n\n";
+            //std::cout << "Completing Process: " << getPCBController() -> getRunningProcess() -> getName() << "\n\n";
             getPCBController() -> completePCB();
             pcbToRun = NULL;
             cycleTracker++;
@@ -155,20 +157,22 @@ void MultilevelFeedbackQueue::runProcesses(int numberOfQueues, int timeQuantum, 
         if( cycleTracker >= numberOfCycles &&
             pcbToRun == NULL )
         {
-            std::cout << "Switching queue from " << currentQueue;
+            //std::cout << "Switching queue from " << currentQueue;
 
             cycleTracker = 0;
 
             //Queue 1 is the bottom, queue #numberOfQueues is top
             if(currentQueue == 1)
-            {std::cout << "going back to top queue" << std::endl;
+            {
+                //std::cout << "going back to top queue" << std::endl;
                 currentQueue = numberOfQueues;
             }
             else
-            {std::cout << "going down a queue" << std::endl;
+            {
+                //std::cout << "going down a queue" << std::endl;
                 currentQueue--;
             }
-            std::cout << " to " << currentQueue << std::endl;
+            //std::cout << " to " << currentQueue << std::endl;
 
             currentMinPriority = getMinPriority(numberOfQueues, currentQueue);
             currentMaxPriority = getMaxPriority(numberOfQueues, currentQueue);

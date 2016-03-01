@@ -256,6 +256,36 @@ PCB* PCBController::findNextInPriorityQueue(int minPriority, int maxPriority)
     return toReturn;
 }
 
+PCB* PCBController::findTicketedPCB(int ticketNumber)
+{
+    int currentTicket = 0;
+    PCB* toReturn = NULL;
+
+    if(getReadyQueue() -> getHead() != NULL)
+    {
+        PCBNode* currentSpotInQueue = getReadyQueue() -> getHead();
+
+        while(currentSpotInQueue != NULL)
+        {
+            if( ticketNumber < (currentTicket + currentSpotInQueue -> getPCB() -> getNumberOfTickets()) )
+            {
+                toReturn = currentSpotInQueue -> getPCB();
+                break;
+            }
+
+            currentTicket = currentTicket + currentSpotInQueue -> getPCB() -> getNumberOfTickets();
+            currentSpotInQueue = currentSpotInQueue -> getNext();
+        }
+    }
+
+    /*if(toReturn == NULL)
+    {
+        toReturn = runningProcess;
+    }*/
+
+    return toReturn;
+}
+
 PCBQueue* PCBController::getReadyQueue()
 {
     return readyQueue;
@@ -270,4 +300,16 @@ PCBQueue* PCBController::getBlockedQueue()
 PCB* PCBController::getRunningProcess()
 {
     return runningProcess;
+}
+
+void PCBController::setTickets(int numOfTicketsPer)
+{
+    PCBNode* currentNode = readyQueue -> getHead();
+
+    while(currentNode != NULL)
+    {
+        currentNode -> getPCB() -> setNumberOfTickets(currentNode -> getPCB() -> getPercentageOfCPU() * numOfTicketsPer);
+
+        currentNode = currentNode -> getNext();
+    }
 }

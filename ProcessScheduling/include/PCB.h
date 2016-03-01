@@ -54,6 +54,9 @@ public:
     void setPercentageOfCPU(int);
     int getPercentageOfCPU();
 
+    void setNumberOfTickets(int);
+    int getNumberOfTickets();
+
 
     ///Methods
     void printPCB();
@@ -64,16 +67,22 @@ private:
     std::string processName;
     bool processClass;
 
+    //General Use
     short priority;
     short state;
     bool suspended;
 
+    //Memory Management
     int memory;
 
+    //All Schedulers
     int executionTime;
     int timeRemaining;
     int timeOfArrival;
     int percentageOfCPU;
+
+    //Lottery Scheduler
+    int numberOfTickets;
 };
 
 #endif // PCB_H

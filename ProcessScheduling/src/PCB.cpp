@@ -123,6 +123,16 @@ int PCB::getPercentageOfCPU()
     return percentageOfCPU;
 }
 
+void PCB::setNumberOfTickets(int numberOfTickets)
+{
+    this -> numberOfTickets = numberOfTickets;
+}
+
+int PCB::getNumberOfTickets()
+{
+    return numberOfTickets;
+}
+
 
 /// /////////////////////////////////////////////////
 

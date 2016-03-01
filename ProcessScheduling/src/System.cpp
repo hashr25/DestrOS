@@ -107,8 +107,8 @@ void System::initCommands()
     Command* cmd25 = new MLFQCommand(pcbController);
     commandList -> push_back(cmd25);
 
-    /*Command* cmd26 = new LSCommand(pcbController);
-    commandList -> push_back(cmd26);*/
+    Command* cmd26 = new LSCommand(pcbController);
+    commandList -> push_back(cmd26);
 
     Command* cmd42 = new ExitCommand;
     commandList -> push_back(cmd42);

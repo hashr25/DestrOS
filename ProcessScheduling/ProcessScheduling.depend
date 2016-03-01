@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1445048575 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\main.cpp
+1445044975 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\main.cpp
 	<iostream>
 	"System.h"
 	"DisplayDateCommand.h"
@@ -8,7 +8,7 @@
 	"ListCommandsCommand.h"
 	"ExitCommand.h"
 
-1445568424 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\system.h
+1449507554 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\system.h
 	<vector>
 	<string>
 	"CommandListener.h"
@@ -41,299 +41,300 @@
 	"FPPSCommand.h"
 	"RRCommand.h"
 	"MLFQCommand.h"
+	"LSCommand.h"
 
-1442892259 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\commandlistener.h
+1442888659 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\commandlistener.h
 	<iostream>
 	<vector>
 	"Command.h"
 
-1444586977 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\command.h
+1444583377 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\command.h
 	<vector>
 	<string>
 	"PCBController.h"
 
-1445527801 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\pcbcontroller.h
+1449587342 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\pcbcontroller.h
 	<iostream>
 	"PCB.h"
 	"PCBNode.h"
 	"PCBQueue.h"
 
-1445215945 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\pcb.h
+1449506680 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\pcb.h
 	<iostream>
 	<string>
 	<assert.h>
 
-1444516147 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\pcbnode.h
+1444512547 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\pcbnode.h
 	"PCB.h"
 
-1444579544 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\pcbqueue.h
+1444575944 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\pcbqueue.h
 	"PCB.h"
 	"PCBNode.h"
 
-1443201025 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\commandlog.h
+1443197425 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\commandlog.h
 	<iostream>
 	<vector>
 	<Assert.h>
 	"Command.h"
 
-1442869956 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\displayversioncommand.h
+1442866356 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\displayversioncommand.h
 	<iostream>
 	"Command.h"
 
-1442869939 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\displaydatecommand.h
+1442866339 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\displaydatecommand.h
 	<iostream>
 	<ctime>
 	"Command.h"
 
-1443014198 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\displayhelpcommand.h
+1443010598 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\displayhelpcommand.h
 	<iostream>
 	"Command.h"
 
-1442869973 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\listcommandscommand.h
+1442866373 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\listcommandscommand.h
 	<iostream>
 	<Command.h>
 
-1442970095 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\exitcommand.h
+1442966495 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\exitcommand.h
 	<iostream>
 	<stdlib.h>
 	<unistd.h>
 	<Windows.h>
 	"Command.h"
 
-1442974334 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\setdatecommand.h
+1442970734 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\setdatecommand.h
 	<Windows.h>
 	<string>
 	<sstream>
 	"Command.h"
 	"CommandListener.h"
 
-1442972145 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\setaliascommand.h
+1442968545 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\setaliascommand.h
 	"Command.h"
 	"CommandListener.h"
 
-1443012026 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\viewdirectorycommand.h
+1443008426 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\viewdirectorycommand.h
 	<iostream>
 	<dirent.h>
 	"Command.h"
 
-1443195478 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\displayhistorycommand.h
+1443191878 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\displayhistorycommand.h
 	<iostream>
 	"Command.h"
 	"CommandLog.h"
 
-1444587537 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\createpcbcommand.h
+1444583937 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\createpcbcommand.h
 	"Command.h"
 
-1444591646 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\deletepcbcommand.h
+1444588046 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\deletepcbcommand.h
 	"Command.h"
 
-1444591646 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\blockpcbcommand.h
+1444588046 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\blockpcbcommand.h
 	"Command.h"
 
-1444591646 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\unblockpcbcommand.h
+1444588046 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\unblockpcbcommand.h
 	"Command.h"
 
-1444591646 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\suspendpcbcommand.h
+1444588046 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\suspendpcbcommand.h
 	"Command.h"
 
-1444591646 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\resumepcbcommand.h
+1444588046 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\resumepcbcommand.h
 	"Command.h"
 
-1444591646 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\setpcbprioritycommand.h
+1444588046 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\setpcbprioritycommand.h
 	"Command.h"
 
-1444591646 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\showpcbcommand.h
+1444588046 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\showpcbcommand.h
 	"Command.h"
 
-1444591647 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\showallpcbcommand.h
+1444588047 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\showallpcbcommand.h
 	"Command.h"
 
-1444591647 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\showreadypcbcommand.h
+1444588047 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\showreadypcbcommand.h
 	"Command.h"
 
-1444591647 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\showblockedpcbcommand.h
+1444588047 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\showblockedpcbcommand.h
 	"Command.h"
 
-1444673272 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\blockpcbcommand.cpp
+1444669672 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\blockpcbcommand.cpp
 	"BlockPCBCommand.h"
 
-1444590290 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\command.cpp
+1444586690 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\command.cpp
 	"Command.h"
 
-1445048575 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\commandlistener.cpp
+1445044975 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\commandlistener.cpp
 	"CommandListener.h"
 
-1443201705 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\commandlog.cpp
+1443198105 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\commandlog.cpp
 	"CommandLog.h"
 
-1444596001 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\createpcbcommand.cpp
+1444592401 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\createpcbcommand.cpp
 	"CreatePCBCommand.h"
 
-1444664183 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\deletepcbcommand.cpp
+1444660583 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\deletepcbcommand.cpp
 	"DeletePCBCommand.h"
 
-1442870462 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\displaydatecommand.cpp
+1442866862 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\displaydatecommand.cpp
 	"DisplayDateCommand.h"
 
-1445048575 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\displayhelpcommand.cpp
+1445044975 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\displayhelpcommand.cpp
 	"DisplayHelpCommand.h"
 
-1445048575 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\displayhistorycommand.cpp
+1445044975 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\displayhistorycommand.cpp
 	"DisplayHistoryCommand.h"
 
-1442870417 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\displayversioncommand.cpp
+1442866817 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\displayversioncommand.cpp
 	"DisplayVersionCommand.h"
 
-1444674484 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\exitcommand.cpp
+1444670884 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\exitcommand.cpp
 	"ExitCommand.h"
 
-1445048575 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\listcommandscommand.cpp
+1445044975 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\listcommandscommand.cpp
 	"ListCommandsCommand.h"
 
-1445604770 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcbcontroller.cpp
+1449589795 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcbcontroller.cpp
 	"PCBController.h"
 
-1444514567 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcbnode.cpp
+1444510967 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcbnode.cpp
 	"PCBNode.h"
 
-1445120228 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcbqueue.cpp
+1445116628 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcbqueue.cpp
 	"PCBQueue.h"
 
-1444673598 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\resumepcbcommand.cpp
+1444669998 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\resumepcbcommand.cpp
 	"ResumePCBCommand.h"
 
-1445048575 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\setaliascommand.cpp
+1445044975 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\setaliascommand.cpp
 	"SetAliasCommand.h"
 
-1443203443 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\setdatecommand.cpp
+1443199843 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\setdatecommand.cpp
 	"SetDateCommand.h"
 
-1444674071 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\setpcbprioritycommand.cpp
+1444670471 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\setpcbprioritycommand.cpp
 	"SetPCBPriorityCommand.h"
 
-1444599488 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\showallpcbcommand.cpp
+1444595888 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\showallpcbcommand.cpp
 	"ShowAllPCBCommand.h"
 
-1444599448 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\showblockedpcbcommand.cpp
+1444595848 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\showblockedpcbcommand.cpp
 	"ShowBlockedPCBCommand.h"
 
-1444663943 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\showpcbcommand.cpp
+1444660343 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\showpcbcommand.cpp
 	"ShowPCBCommand.h"
 
-1444599322 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\showreadypcbcommand.cpp
+1444595722 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\showreadypcbcommand.cpp
 	"ShowReadyPCBCommand.h"
 
-1444673459 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\suspendpcbcommand.cpp
+1444669859 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\suspendpcbcommand.cpp
 	"SuspendPCBCommand.h"
 
-1444673262 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\unblockpcbcommand.cpp
+1444669662 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\unblockpcbcommand.cpp
 	"UnblockPCBCommand.h"
 
-1443020915 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\viewdirectorycommand.cpp
+1443017315 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\viewdirectorycommand.cpp
 	"ViewDirectoryCommand.h"
 
-1445604503 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcb.cpp
+1449506625 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\pcb.cpp
 	"PCB.h"
 
-1445568440 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\system.cpp
+1449507514 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\system.cpp
 	"System.h"
 
-1445216864 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\processreader.cpp
+1445213264 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\processreader.cpp
 	"ProcessReader.h"
 
-1444767506 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\processreader.h
+1444763906 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\processreader.h
 	<fstream>
 	<vector>
 	<string>
 	<sstream>
 	"PCB.h"
 
-1445048575 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\processscheduler.cpp
+1445044975 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\processscheduler.cpp
 	"ProcessScheduler.h"
 
-1445115549 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\processscheduler.h
+1445111949 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\processscheduler.h
 	<vector>
 	<fstream>
 	"PCBController.h"
 	"PCB.h"
 	"ProcessReader.h"
 
-1445219633 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\shortestjobfirst.cpp
+1445216033 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\shortestjobfirst.cpp
 	"ShortestJobFirst.h"
 
-1445117097 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\shortestjobfirst.h
+1445113497 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\shortestjobfirst.h
 	"ProcessScheduler.h"
 	"ShowReadyPCBCommand.h"
 
-1445105794 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\sjfcommand.h
+1445102194 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\sjfcommand.h
 	<fstream>
 	"Command.h"
 	"ProcessReader.h"
 	"ShortestJobFirst.h"
 
-1445120533 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\sjfcommand.cpp
+1445116933 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\sjfcommand.cpp
 	"SJFCommand.h"
 
-1445131348 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\fifocommand.h
+1445127748 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\fifocommand.h
 	"Command.h"
 	"PCBController.h"
 	"FirstInFirstOut.h"
 
-1445138384 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\firstinfirstout.h
+1445134784 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\firstinfirstout.h
 	"ProcessScheduler.h"
 
-1445135994 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\fifocommand.cpp
+1445132394 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\fifocommand.cpp
 	"FIFOCommand.h"
 
-1445219443 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\firstinfirstout.cpp
+1445215843 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\firstinfirstout.cpp
 	"FirstInFirstOut.h"
 
-1445224716 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\shortesttimetocompletion.cpp
+1445221116 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\shortesttimetocompletion.cpp
 	"ShortestTimeToCompletion.h"
 
-1445185394 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\shortesttimetocompletion.h
+1445181794 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\shortesttimetocompletion.h
 	"ProcessScheduler.h"
 
-1445224438 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\stcfcommand.cpp
+1445220838 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\stcfcommand.cpp
 	"STCFCommand.h"
 
-1445220767 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\stcfcommand.h
+1445217167 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\stcfcommand.h
 	<fstream>
 	"Command.h"
 	"ShortestTimeToCompletion.h"
 
-1445353083 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\fixedprioritypreemptive.cpp
+1445349483 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\fixedprioritypreemptive.cpp
 	"FixedPriorityPreEmptive.h"
 
-1445226381 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\fixedprioritypreemptive.h
+1445222781 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\fixedprioritypreemptive.h
 	"ProcessScheduler.h"
 
-1445226381 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\fppscommand.h
+1445222781 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\fppscommand.h
 	<fstream>
 	"Command.h"
 	"FixedPriorityPreEmptive.h"
 
-1445226382 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\fppscommand.cpp
+1445222782 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\fppscommand.cpp
 	"FPPSCommand.h"
 
-1445353970 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\rrcommand.h
+1445350370 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\rrcommand.h
 	"Command.h"
 	"RoundRobin.h"
 
-1445354422 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\roundrobin.h
+1445350822 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\roundrobin.h
 	<fstream>
 	"ProcessScheduler.h"
 
-1445551446 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\roundrobin.cpp
+1445547846 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\roundrobin.cpp
 	"RoundRobin.h"
 
-1445392226 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\rrcommand.cpp
+1445388626 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\rrcommand.cpp
 	"RRCommand.h"
 
-1445568580 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\mlfqcommand.cpp
+1445564980 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\mlfqcommand.cpp
 	"MLFQCommand.h"
 
-1445568448 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\mlfqcommand.h
+1445564848 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\mlfqcommand.h
 	<fstream>
 	"Command.h"
 	"MultilevelFeedbackQueue.h"
@@ -345,17 +346,34 @@
 1445529108 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\mutilevelfeedbackqueue.cpp
 	"MutilevelFeedbackQueue.h"
 
-1444750885 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\schedulepcb.cpp
+1444747285 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\schedulepcb.cpp
 	"SchedulePCB.h"
 
-1444750807 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\schedulepcb.h
+1444747207 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\schedulepcb.h
 	"PCB.h"
 
-1445609700 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\multilevelfeedbackqueue.cpp
+1445608713 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\multilevelfeedbackqueue.cpp
 	"MultilevelFeedbackQueue.h"
 
-1445604417 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\multilevelfeedbackqueue.h
+1449506087 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\multilevelfeedbackqueue.h
 	<fstream>
 	"ProcessScheduler.h"
 	"ShowReadyPCBCommand.h"
+
+1449589879 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\lotteryscheduler.cpp
+	"LotteryScheduler.h"
+
+1449589665 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\lotteryscheduler.h
+	<stdlib.h>
+	<time.h>
+	"ProcessScheduler.h"
+	"PCBController.h"
+	"ShowAllPCBCommand.h"
+
+1449506784 z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\include\lscommand.h
+	"Command.h"
+	"LotteryScheduler.h"
+
+1449507447 source:z:\hashr25 on my mac\onedrive\concord university\2015 fall 2015\cs 361 - operating systems\destros\processscheduling\src\lscommand.cpp
+	"LSCommand.h"
 

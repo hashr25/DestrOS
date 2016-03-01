@@ -49,7 +49,9 @@
 		<Unit filename="include/FPPSCommand.h" />
 		<Unit filename="include/FirstInFirstOut.h" />
 		<Unit filename="include/FixedPriorityPreEmptive.h" />
+		<Unit filename="include/LSCommand.h" />
 		<Unit filename="include/ListCommandsCommand.h" />
+		<Unit filename="include/LotteryScheduler.h" />
 		<Unit filename="include/MLFQCommand.h" />
 		<Unit filename="include/MultilevelFeedbackQueue.h" />
 		<Unit filename="include/PCB.h" />
@@ -93,7 +95,9 @@
 		<Unit filename="src/FPPSCommand.cpp" />
 		<Unit filename="src/FirstInFirstOut.cpp" />
 		<Unit filename="src/FixedPriorityPreEmptive.cpp" />
+		<Unit filename="src/LSCommand.cpp" />
 		<Unit filename="src/ListCommandsCommand.cpp" />
+		<Unit filename="src/LotteryScheduler.cpp" />
 		<Unit filename="src/MLFQCommand.cpp" />
 		<Unit filename="src/MultilevelFeedbackQueue.cpp" />
 		<Unit filename="src/PCB.cpp" />
